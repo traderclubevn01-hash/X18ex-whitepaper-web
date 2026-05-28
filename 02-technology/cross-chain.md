@@ -8,51 +8,43 @@ X18ex implements a **Chain Abstraction** architecture — users only see assets 
 
 ## Intent-Based Cross-Chain Protocol
 
-```
-┌──────────────────────────────────────────────────────┐
-│                  USER EXPERIENCE                     │
-│                                                      │
-│  "Swap 100 BNB → USDC at best price"                 │
-│  (User doesn't know BNB is on opBNB,                 │
-│   best USDC pool is on Base)                         │
-│                                                      │
-└─────────────────────┬────────────────────────────────┘
-                      │
-┌─────────────────────▼────────────────────────────────┐
-│              X18 INTENT RESOLVER                     │
-│                                                      │
-│  1. Parse user intent                                │
-│  2. Scan liquidity: BSC, opBNB, Arbitrum, Base       │
-│  3. Calculate: direct swap vs cross-chain route      │
-│  4. Factor: gas, slippage, bridge risk, speed        │
-│  5. Present best option to user                      │
-│                                                      │
-│  Result: Split 70% Arbitrum + 30% Base               │
-│  Savings: 0.4% better vs single-chain                │
-│                                                      │
-└─────────────────────┬────────────────────────────────┘
-                      │
-┌─────────────────────▼────────────────────────────────┐
-│           RESOLVER NETWORK (Execution)               │
-│                                                      │
-│  Professional market makers compete to fill          │
-│  the intent at or better than quoted price.          │
-│                                                      │
-│  • Dutch auction mechanism                           │
-│  • Staked $X18 as collateral                         │
-│  • Slashing for failed fills                         │
-│                                                      │
-└─────────────────────┬────────────────────────────────┘
-                      │
-┌─────────────────────▼────────────────────────────────┐
-│             SETTLEMENT & VERIFICATION                │
-│                                                      │
-│  On-chain escrow contracts on both chains            │
-│  Atomic settlement: both sides or neither            │
-│  No custodial risk, no bridge token exposure         │
-│                                                      │
-└──────────────────────────────────────────────────────┘
-```
+<div class="x18-flow-process">
+<div class="x18-flow-step">
+<div class="step-num">1</div>
+<div class="step-content">
+<strong>USER EXPERIENCE:</strong> "Swap 100 BNB → USDC at best price"
+<div style="font-size: 12px; color: #94a3b8; margin-top: 4px;">User doesn't need to know BNB is on opBNB and the best USDC pool is on Base.</div>
+</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">2</div>
+<div class="step-content">
+<strong>X18 INTENT RESOLVER:</strong>
+<ul style="margin: 4px 0 0 0; padding-left: 16px; font-size: 12px; color: #b0b7c3;">
+<li>Parses user intent & scans liquidity across BSC, opBNB, Arbitrum, and Base.</li>
+<li>Calculates direct swap vs cross-chain routing based on gas, slippage, bridge risk, and speed.</li>
+</ul>
+<div style="font-size: 12px; color: #10b981; margin-top: 4px;">✔ Result: Split 70% Arbitrum + 30% Base (Savings: 0.4% better price)</div>
+</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">3</div>
+<div class="step-content">
+<strong>RESOLVER NETWORK (Execution):</strong>
+<div style="font-size: 12px; color: #cbd5e1; margin-top: 4px;">Professional market makers compete to fill the intent via Dutch auctions, using staked $X18 as collateral. Slashing applies for failed fills.</div>
+</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">4</div>
+<div class="step-content">
+<strong>SETTLEMENT & VERIFICATION:</strong>
+<div style="font-size: 12px; color: #cbd5e1; margin-top: 4px;">On-chain escrow contracts finalize native execution on both chains atomically (both sides fill or neither). Zero custodial risk or bridge token exposure.</div>
+</div>
+</div>
+</div>
 
 ---
 
@@ -85,18 +77,31 @@ Sei, Mantle, Blast, zkSync, Scroll, Linea, Aptos, Sui
 
 Instead of each chain having separate liquidity, X18ex creates a **Unified Liquidity Layer**:
 
-```
-Traditional:
-  BNB/USDC on opBNB: $50M liquidity
-  BNB/USDC on Base:     $20M liquidity
-  BNB/USDC on BSC:      $30M liquidity
-  → User on Arbitrum only accesses $50M
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">UNIFIED LIQUIDITY POOL VS TRADITIONAL</div>
+<div class="x18-diagram-row cols-2">
+<div class="x18-diagram-card">
+<div class="card-icon">❌</div>
+<div class="card-title">Traditional Liquidity</div>
+<div class="card-desc" style="text-align: left;">
+• BNB/USDC on opBNB: $50M liquidity<br/>
+• BNB/USDC on Base: $20M liquidity<br/>
+• BNB/USDC on BSC: $30M liquidity<br/>
+<strong style="color: #ef4444; display: block; margin-top: 8px;">➜ User on Arbitrum only accesses $50M.</strong>
+</div>
+</div>
 
-X18ex Unified:
-  BNB/USDC across all chains: $100M unified liquidity
-  → User on ANY chain accesses the entire $100M
-  → Slippage reduced 3-5x for large trades
-```
+<div class="x18-diagram-card" style="border-color: rgba(16, 185, 129, 0.4) !important;">
+<div class="card-icon">✅</div>
+<div class="card-title" style="color: #34d399;">X18ex Unified Liquidity</div>
+<div class="card-desc" style="text-align: left;">
+• BNB/USDC across all chains: $100M unified liquidity<br/>
+• User on ANY chain accesses the entire $100M<br/>
+<strong style="color: #34d399; display: block; margin-top: 8px;">➜ Slippage reduced 3-5x for large trades.</strong>
+</div>
+</div>
+</div>
+</div>
 
 ---
 

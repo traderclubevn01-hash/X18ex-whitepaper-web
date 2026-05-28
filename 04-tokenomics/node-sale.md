@@ -125,35 +125,54 @@ contract X18NodeManager {
 ```
 
 ### 1. Node Purchase
-```
-User purchases Node package ($1,000 / $5,000 / $10,000)
-         │
-         ▼
-X18 Tokens allocated to user
-         │
-         ▼
-All tokens are LOCKED ❌
-(Cannot withdraw, sell, or transfer)
-         │
-         ▼
-Mining starts automatically ⛏️
-```
+<div class="x18-flow-process">
+<div class="x18-flow-step">
+<div class="step-num">1</div>
+<div class="step-content"><strong>Buy Node:</strong> User purchases Node package ($1,000 / $5,000 / $10,000)</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">2</div>
+<div class="step-content"><strong>Allocating:</strong> $X18 tokens are allocated to the user's account</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step" style="border-left-color: #ef4444;">
+<div class="step-num" style="border-color: #ef4444; color: #ef4444; background: rgba(239, 68, 68, 0.05);">3</div>
+<div class="step-content"><strong>Token Lock:</strong> All tokens are locked (cannot withdraw, sell, or transfer)</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">4</div>
+<div class="step-content"><strong>Mining:</strong> Mining starts automatically, gradually paying yields</div>
+</div>
+</div>
 
 ### 2. Mining & Unlock
-```
-Each month, user receives mining rewards:
-         │
-         ├── $1,000 Package:  8% × 1,000 =   80 X18/month
-         ├── $5,000 Package:  9% × 5,250 =  472.5 X18/month
-         └── $10,000 Package: 10% × 11,000 = 1,100 X18/month
-         │
-         ▼
-Rewards are unlocked and can be:
-  ✅ Held (HODL)
-  ✅ Traded on X18 DEX
-  ✅ Staked to earn more
-  ✅ Used in X18 Game
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">Monthly Yields & Payouts</div>
+<ul class="x18-node-details" style="margin: 10px 0 !important;">
+<li><span class="label">🥉 $1,000 Package</span><span class="value">8% × 1,000 = 80 X18/month</span></li>
+<li><span class="label">🥈 $5,000 Package</span><span class="value">9% × 5,250 = 472.5 X18/month</span></li>
+<li><span class="label">🥇 $10,000 Package</span><span class="value">10% × 11,000 = 1,100 X18/month</span></li>
+</ul>
+<div style="font-size: 13px; color: #10b981; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 14px; margin-top: 10px; font-weight: 700;">
+✔ Yield rewards are 100% unlocked and can be:
+</div>
+<div class="x18-diagram-row cols-4" style="margin-top: 12px;">
+<div class="x18-diagram-card" style="min-height: auto; padding: 8px;">
+<div style="font-size: 12px; font-weight: 700;">HODL</div>
+</div>
+<div class="x18-diagram-card" style="min-height: auto; padding: 8px;">
+<div style="font-size: 12px; font-weight: 700;">Trade on DEX</div>
+</div>
+<div class="x18-diagram-card" style="min-height: auto; padding: 8px;">
+<div style="font-size: 12px; font-weight: 700;">Stake for Yield</div>
+</div>
+<div class="x18-diagram-card" style="min-height: auto; padding: 8px;">
+<div style="font-size: 12px; font-weight: 700;">Use in Game</div>
+</div>
+</div>
+</div>
 
 ### 3. Token Lock & Release
 > **Important**: All $X18 Tokens purchased in the initial package will be **LOCKED** and only released monthly through the mining mechanism. This design aims to:
@@ -235,21 +254,18 @@ The Node sale program features a **countdown clock** displayed in each user's da
 
 After 3 months, all **unsold** Node packages will be completely burned:
 
-```
-Example: If only 1,800 / 2,300 packages are sold:
-
-Unsold packages: 500
-Equivalent Tokens: ~2,000,000 $X18 (estimated)
-         │
-         ▼
-🔥 Permanently BURNED — Tokens will never exist
-         │
-         ▼
-Total Supply decreases from 18,000,000 → ~16,000,000
-         │
-         ▼
-💎 Scarcity increases → Token value rises for holders
-```
+<div class="x18-diagram-box" style="max-width: 500px; margin: 30px auto;">
+<div class="x18-diagram-title" style="color: #ef4444;">🔥 BURN SCENARIO EXAMPLE</div>
+<ul class="x18-node-details" style="margin: 10px 0 !important;">
+<li><span class="label">Total Packages</span><span class="value">2,300</span></li>
+<li><span class="label">Sold Packages</span><span class="value">1,800</span></li>
+<li><span class="label">Unsold Packages</span><span class="value">500</span></li>
+<li><span class="label">Equivalent Tokens Burned</span><span class="value" style="color: #ef4444;">~2,000,000 $X18</span></li>
+<li style="border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 12px; margin-bottom: 8px !important;"></li>
+<li><span class="label">Supply decreases</span><span class="value" style="color: #ef4444;">18M ➜ 16M</span></li>
+<li><span class="label">Scarcity benefits</span><span class="value" style="color: #34d399;">Floor price rises for holders</span></li>
+</ul>
+</div>
 
 > **Commitment**: There is no mechanism to mint burned tokens again. The smart contract ensures immutability.
 

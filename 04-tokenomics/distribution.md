@@ -4,22 +4,74 @@
 
 ### Total Supply: 18,000,000 $X18
 
-```
-╔═══════════════════════════════════════════════════════════════════╗
-║                    $X18 TOKEN DISTRIBUTION                       ║
-╠═══════════════════════════════════════════════════════════════════╣
-║                                                                   ║
-║  ████████████████████████████████████  Community & Ecosystem 30%  ║
-║  ████████████████████                  Liquidity & Market     18% ║
-║  ████████████████████                  Team & Core            18% ║
-║  █████████████████                     Treasury (DAO)         15% ║
-║  ████████████                          Private Sale           10% ║
-║  ██████                                Public Sale             5% ║
-║  ████                                  Advisors               2% ║
-║  ████                                  Airdrop & Rewards      2% ║
-║                                                                   ║
-╚═══════════════════════════════════════════════════════════════════╝
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">$X18 TOKEN DISTRIBUTION</div>
+<div class="x18-progress-list">
+<div class="x18-progress-item">
+<div class="x18-progress-labels">
+<span class="x18-progress-name">Community & Ecosystem</span>
+<span class="x18-progress-sold">30% (5,400,000 $X18)</span>
+</div>
+<div class="x18-progress-bar-bg"><div class="x18-progress-bar" style="background: #3b82f6; width: 30%;"></div></div>
+</div>
+
+<div class="x18-progress-item">
+<div class="x18-progress-labels">
+<span class="x18-progress-name">Liquidity & Market Making</span>
+<span class="x18-progress-sold">18% (3,240,000 $X18)</span>
+</div>
+<div class="x18-progress-bar-bg"><div class="x18-progress-bar" style="background: #00f2fe; width: 18%;"></div></div>
+</div>
+
+<div class="x18-progress-item">
+<div class="x18-progress-labels">
+<span class="x18-progress-name">Team & Core Contributors</span>
+<span class="x18-progress-sold">18% (3,240,000 $X18)</span>
+</div>
+<div class="x18-progress-bar-bg"><div class="x18-progress-bar" style="background: #9b51e0; width: 18%;"></div></div>
+</div>
+
+<div class="x18-progress-item">
+<div class="x18-progress-labels">
+<span class="x18-progress-name">Treasury (DAO)</span>
+<span class="x18-progress-sold">15% (2,700,000 $X18)</span>
+</div>
+<div class="x18-progress-bar-bg"><div class="x18-progress-bar" style="background: #f7b32b; width: 15%;"></div></div>
+</div>
+
+<div class="x18-progress-item">
+<div class="x18-progress-labels">
+<span class="x18-progress-name">Private Sale</span>
+<span class="x18-progress-sold">10% (1,800,000 $X18)</span>
+</div>
+<div class="x18-progress-bar-bg"><div class="x18-progress-bar" style="background: #e74c3c; width: 10%;"></div></div>
+</div>
+
+<div class="x18-progress-item">
+<div class="x18-progress-labels">
+<span class="x18-progress-name">Public Sale</span>
+<span class="x18-progress-sold">5% (900,000 $X18)</span>
+</div>
+<div class="x18-progress-bar-bg"><div class="x18-progress-bar" style="background: #2ecc71; width: 5%;"></div></div>
+</div>
+
+<div class="x18-progress-item">
+<div class="x18-progress-labels">
+<span class="x18-progress-name">Advisors</span>
+<span class="x18-progress-sold">2% (360,000 $X18)</span>
+</div>
+<div class="x18-progress-bar-bg"><div class="x18-progress-bar" style="background: #a78bfa; width: 2%;"></div></div>
+</div>
+
+<div class="x18-progress-item">
+<div class="x18-progress-labels">
+<span class="x18-progress-name">Airdrop & Rewards</span>
+<span class="x18-progress-sold">2% (360,000 $X18)</span>
+</div>
+<div class="x18-progress-bar-bg"><div class="x18-progress-bar" style="background: #ec4899; width: 2%;"></div></div>
+</div>
+</div>
+</div>
 
 ### Allocation Details
 
@@ -40,35 +92,43 @@
 
 ### Visual Timeline
 
-```
-Month:  0   3   6   9  12  15  18  21  24  27  30  33  36  42  48
-        │   │   │   │   │   │   │   │   │   │   │   │   │   │   │
-Public  ██░░░░░░░░░░░░░░░░░░░░░░░
-Sale    10% TGE → 12 months linear
-
-Airdrop ████████
-        Event-based distribution
-
-Private ............██░░░░░░░░░░░░░░░░░░░░░░░░░░
-Sale    6mo cliff → 18 months linear
-
-Advisor ............██░░░░░░░░░░░░░░░░░░░░░░░░░░
-        6mo cliff → 24 months linear
-
-Liquid- ██████████████████████████████████████████████████
-ity     Progressive release as needed
-
-Commun- ....██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-ity     3mo cliff → 48 months linear
-
-Team    ..................██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-        18mo cliff → 36 months linear
-
-Treasu- ........................██░░░░░░░░░░░░░░░░░░░░░░░░
-ry      DAO vote required, progressive
-
-████ = Released   ░░░░ = Vesting   .... = Cliff (locked)
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">Vesting Schedule Details</div>
+<div class="x18-flow-process">
+<div class="x18-flow-step" style="border-left: 3px solid #2ecc71;">
+<div class="step-num">Public</div>
+<div class="step-content"><strong>Public Sale:</strong> 10% unlocked at TGE, then 12 months linear daily vesting.</div>
+</div>
+<div class="x18-flow-step" style="border-left: 3px solid #ec4899;">
+<div class="step-num">Air</div>
+<div class="step-content"><strong>Airdrop:</strong> 100% unlocked, event-based distribution.</div>
+</div>
+<div class="x18-flow-step" style="border-left: 3px solid #e74c3c;">
+<div class="step-num">Priv</div>
+<div class="step-content"><strong>Private Sale:</strong> 6 months cliff, then 18 months linear daily vesting.</div>
+</div>
+<div class="x18-flow-step" style="border-left: 3px solid #a78bfa;">
+<div class="step-num">Adv</div>
+<div class="step-content"><strong>Advisors:</strong> 6 months cliff, then 24 months linear daily vesting.</div>
+</div>
+<div class="x18-flow-step" style="border-left: 3px solid #00f2fe;">
+<div class="step-num">Liq</div>
+<div class="step-content"><strong>Liquidity:</strong> Progressive release as needed for pool and listing stability.</div>
+</div>
+<div class="x18-flow-step" style="border-left: 3px solid #3b82f6;">
+<div class="step-num">Comm</div>
+<div class="step-content"><strong>Community & Ecosystem:</strong> 3 months cliff, then 48 months linear vesting.</div>
+</div>
+<div class="x18-flow-step" style="border-left: 3px solid #9b51e0;">
+<div class="step-num">Team</div>
+<div class="step-content"><strong>Team:</strong> 18 months cliff, then 36 months linear vesting.</div>
+</div>
+<div class="x18-flow-step" style="border-left: 3px solid #f7b32b;">
+<div class="step-num">Treas</div>
+<div class="step-content"><strong>Treasury:</strong> 12 months cliff, released progressively via DAO votes.</div>
+</div>
+</div>
+</div>
 
 ### Vesting Details
 
@@ -87,29 +147,21 @@ ry      DAO vote required, progressive
 
 ## Circulating Supply Over Time
 
-```
-Supply (M)
-18.0 ┤
-     │                                          ╭──────── Full unlock
-16.0 ┤                                    ╭─────╯
-     │                              ╭─────╯
-14.0 ┤                         ╭────╯
-     │                    ╭────╯
-12.0 ┤               ╭────╯
-     │          ╭────╯
-10.0 ┤     ╭────╯
-     │╭────╯
- 8.0 ┤╯
-     │
- 6.0 ┤  ← Minus burn = ACTUAL circulating decreases over time
-     │
- 4.0 ┤
-     │
- 2.0 ┤  ← TGE: ~2.5M circulating (13.9%)
-     │
- 0.0 ┤──────────────────────────────────────────────────────
-     0    6    12   18   24   30   36   42   48   54  Month
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">📈 Circulating Supply Projections</div>
+<ul class="x18-node-details" style="margin: 10px 0 !important;">
+<li><span class="label">📅 Month 0 (TGE)</span><span class="value" style="color: #ec4899;">~2.5M tokens (13.9% of supply)</span></li>
+<li><span class="label">📅 Month 6</span><span class="value">~4.2M tokens (23.3%)</span></li>
+<li><span class="label">📅 Month 12</span><span class="value">~6.5M tokens (36.1%)</span></li>
+<li><span class="label">📅 Month 18</span><span class="value" style="color: #9b51e0;">~8.8M tokens (48.9%)</span></li>
+<li><span class="label">📅 Month 24</span><span class="value">~11.5M tokens (63.9%)</span></li>
+<li><span class="label">📅 Month 36</span><span class="value">~15.0M tokens (83.3%)</span></li>
+<li><span class="label">📅 Month 48</span><span class="value" style="color: #34d399;">~16.2M tokens (90.0%)*</span></li>
+</ul>
+<div style="font-size: 12px; color: #fbbf24; background: rgba(245, 158, 11, 0.05); padding: 10px; border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.15); margin-top: 8px;">
+🔥 <strong>scarcity effect:</strong> Continuous burning reduces actual supply from these milestones.
+</div>
+</div>
 
 ### Key Milestones
 | Month | Event | Est. Circulating |

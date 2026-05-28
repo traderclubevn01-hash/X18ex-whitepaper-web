@@ -61,17 +61,24 @@ class X18exMarketPredictor(nn.Module):
 *Note: The actual model uses distributed processing via X18 Nodes to achieve <10ms inference times.*
 
 ### 1. Natural Language Trading
-```
-User: "Buy BNB if the price drops below $600 and RSI is below 30"
-
-AI Bot:  ✅ Strategy created:
-         • Trigger: BNB/USDC < $600 AND RSI(14) < 30
-         • Action: Market Buy
-         • Amount: [Set by user]
-         • Protection: Stop-loss -5%, Take-profit +15%
-
-         [Activate] [Edit] [Backtest First]
-```
+<div class="x18-diagram-box" style="max-width: 480px; margin: 30px auto;">
+<div class="x18-diagram-title" style="color: #3b82f6;">Natural Language Trading</div>
+<div style="background: rgba(0, 0, 0, 0.2); padding: 16px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); font-family: var(--vp-font-family-mono); font-size: 13px;">
+<div style="color: #60a5fa; margin-bottom: 8px;"><strong>User:</strong> "Buy BNB if the price drops below $600 and RSI is below 30"</div>
+<div style="color: #10b981; margin-top: 12px; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 8px;"><strong>🤖 AI Bot:</strong> ✅ Strategy created:</div>
+<ul style="list-style: none; padding: 0; margin: 6px 0; color: #cbd5e1; padding-left: 12px;">
+<li>• <strong>Trigger:</strong> BNB/USDC &lt; $600 AND RSI(14) &lt; 30</li>
+<li>• <strong>Action:</strong> Market Buy</li>
+<li>• <strong>Amount:</strong> [Set by user]</li>
+<li>• <strong>Protection:</strong> Stop-loss -5%, Take-profit +15%</li>
+</ul>
+<div style="margin-top: 12px; display: flex; gap: 8px;">
+<button class="x18-db-btn primary" style="padding: 4px 10px; font-size: 11px;">Activate</button>
+<button class="x18-db-btn secondary" style="padding: 4px 10px; font-size: 11px;">Edit</button>
+<button class="x18-db-btn secondary" style="padding: 4px 10px; font-size: 11px;">Backtest First</button>
+</div>
+</div>
+</div>
 
 ### 2. AI Market Scanner
 - Scans the entire market 24/7
@@ -95,23 +102,65 @@ AI Bot:  ✅ Strategy created:
 
 ## Integrated Bot Dashboard
 
-```
-╔═══════════════════════════════════════════════════════════╗
-║                  🤖 MY ACTIVE BOTS                       ║
-╠═══════════════════════════════════════════════════════════╣
-║                                                           ║
-║  Bot              │ Status │ 7d PnL  │ Trades │ Win Rate ║
-║  ─────────────────┼────────┼─────────┼────────┼──────────║
-║  Smart DCA (BNB)  │ 🟢 ON  │ +3.2%   │   12   │  75%    ║
-║  Grid (BTC/USDC)  │ 🟢 ON  │ +1.8%   │   48   │  83%    ║
-║  Portfolio Guard   │ 🟢 ON  │ —       │    2   │  100%   ║
-║  Sniper (New List)│ 🟡 WAIT│ —       │    0   │  —      ║
-║                                                           ║
-║  Total bot PnL (30 days): +$2,450 (+12.3%)               ║
-║                                                           ║
-║  [+ Create New Bot]  [📊 Performance Report]             ║
-╚═══════════════════════════════════════════════════════════╝
-```
+<div class="x18-dashboard-mockup">
+<div class="x18-dashboard-header">
+<div class="x18-header-dots"><span></span><span></span><span></span></div>
+<div class="x18-header-title">MY ACTIVE BOTS</div>
+</div>
+<div class="x18-dashboard-body">
+<div style="overflow-x: auto;">
+<table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; color: #cbd5e1;">
+<thead>
+<tr style="border-bottom: 2px solid rgba(255,255,255,0.1); color: #fff;">
+<th style="padding: 10px;">Bot</th>
+<th style="padding: 10px;">Status</th>
+<th style="padding: 10px;">7d PnL</th>
+<th style="padding: 10px;">Trades</th>
+<th style="padding: 10px;">Win Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+<td style="padding: 10px; font-weight: 700; color: #fff;">Smart DCA (BNB)</td>
+<td style="padding: 10px; color: #10b981; font-weight: 600;">🟢 ON</td>
+<td style="padding: 10px; color: #10b981; font-weight: 600;">+3.2%</td>
+<td style="padding: 10px;">12</td>
+<td style="padding: 10px;">75%</td>
+</tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+<td style="padding: 10px; font-weight: 700; color: #fff;">Grid (BTC/USDC)</td>
+<td style="padding: 10px; color: #10b981; font-weight: 600;">🟢 ON</td>
+<td style="padding: 10px; color: #10b981; font-weight: 600;">+1.8%</td>
+<td style="padding: 10px;">48</td>
+<td style="padding: 10px;">83%</td>
+</tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+<td style="padding: 10px; font-weight: 700; color: #fff;">Portfolio Guard</td>
+<td style="padding: 10px; color: #10b981; font-weight: 600;">🟢 ON</td>
+<td style="padding: 10px;">—</td>
+<td style="padding: 10px;">2</td>
+<td style="padding: 10px;">100%</td>
+</tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+<td style="padding: 10px; font-weight: 700; color: #fff;">Sniper (New List)</td>
+<td style="padding: 10px; color: #fbbf24; font-weight: 600;">🟡 WAIT</td>
+<td style="padding: 10px;">—</td>
+<td style="padding: 10px;">0</td>
+<td style="padding: 10px;">—</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="font-size: 14px; font-weight: 700; color: #10b981; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 16px; display: flex; justify-content: space-between; align-items: center;">
+<span>Total bot PnL (30 days):</span>
+<span>+$2,450 (+12.3%)</span>
+</div>
+<div class="x18-db-buttons" style="margin-top: 10px;">
+<button class="x18-db-btn primary">+ Create New Bot</button>
+<button class="x18-db-btn secondary">Performance Report</button>
+</div>
+</div>
+</div>
 
 ---
 

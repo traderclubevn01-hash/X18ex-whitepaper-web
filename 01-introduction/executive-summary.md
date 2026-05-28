@@ -37,28 +37,46 @@ The DEX market in 2025 will reach **$6.7 trillion USD** in derivatives trading v
 
 X18ex is architected with **5 layers** and 6 core modules:
 
-```
-╔══════════════════════════════════════════════════════════════╗
-║                     X18ex ECOSYSTEM                         ║
-║                                                              ║
-║  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────────┐ ║
-║  │ X18 Core │  │ X18 Route│  │ X18 Brain│  │  X18 Bot     │ ║
-║  │          │  │          │  │          │  │              │ ║
-║  │ Trading  │  │ Routing  │  │ AI/ML    │  │ AI Bots +    │ ║
-║  │ Engine   │  │ Cross-   │  │ Engine   │  │ SDK +        │ ║
-║  │ Spot+Perp│  │ chain    │  │ Risk+    │  │ Marketplace  │ ║
-║  │ +Margin  │  │ Agg      │  │ MEV      │  │              │ ║
-║  └──────────┘  └──────────┘  └──────────┘  └──────────────┘ ║
-║                                                              ║
-║  ┌──────────────────────┐  ┌────────────────────────────────┐║
-║  │      X18 Game        │  │        X18 Plugins             │║
-║  │                      │  │                                │║
-║  │  Play & Earn         │  │  Open extensions               │║
-║  │  Interactive &       │  │  Developer marketplace         │║
-║  │  Asset Growth        │  │  Community-driven              │║
-║  └──────────────────────┘  └────────────────────────────────┘║
-╚══════════════════════════════════════════════════════════════╝
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">X18ex ECOSYSTEM</div>
+
+<div class="x18-diagram-row cols-4">
+<div class="x18-diagram-card">
+<div class="card-icon">⚡</div>
+<div class="card-title">X18 Core</div>
+<div class="card-desc">Trading Engine (Spot + Perp + Margin)</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">⛓️</div>
+<div class="card-title">X18 Route</div>
+<div class="card-desc">Routing & Cross-chain Aggregation</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">🧠</div>
+<div class="card-title">X18 Brain</div>
+<div class="card-desc">AI/ML Engine (Risk & MEV Protection)</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">🤖</div>
+<div class="card-title">X18 Bot</div>
+<div class="card-desc">AI Bots + SDK + Strategy Marketplace</div>
+</div>
+</div>
+
+<div class="x18-diagram-row cols-2">
+<div class="x18-diagram-card">
+<div class="card-icon">🎮</div>
+<div class="card-title">X18 Game</div>
+<div class="card-desc">Play & Earn (Financial strategy & asset growth)</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">🔌</div>
+<div class="card-title">X18 Plugins</div>
+<div class="card-desc">Open extensions & developer marketplace (Community-driven)</div>
+</div>
+</div>
+</div>
+
 
 | Module | Role |
 |:---|:---|

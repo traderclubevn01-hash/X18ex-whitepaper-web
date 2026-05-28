@@ -36,17 +36,31 @@ X18ex is designed to generate **real yield** from protocol operations, not by mi
 
 ### Revenue Distribution
 
-```
-Total Protocol Revenue
-         │
-         ├── 40% → Buy back & Burn $X18
-         │
-         ├── 30% → veX18 holders (revenue share)
-         │
-         ├── 20% → Treasury (DAO controlled)
-         │
-         └── 10% → Development fund
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">Total Protocol Revenue Allocation</div>
+<div class="x18-diagram-row cols-4">
+<div class="x18-diagram-card" style="border-color: rgba(239, 76, 60, 0.4) !important;">
+<div class="card-icon">🔥</div>
+<div class="card-title">40% Buy & Burn</div>
+<div class="card-desc">Reduces supply, supports floor price.</div>
+</div>
+<div class="x18-diagram-card" style="border-color: rgba(16, 185, 129, 0.4) !important;">
+<div class="card-icon">🔒</div>
+<div class="card-title" style="color: #34d399;">30% veX18 Holders</div>
+<div class="card-desc">Distributed weekly as revenue share.</div>
+</div>
+<div class="x18-diagram-card" style="border-color: rgba(247, 179, 43, 0.4) !important;">
+<div class="card-icon">🏛️</div>
+<div class="card-title">20% Treasury</div>
+<div class="card-desc">DAO-controlled growth & reserve.</div>
+</div>
+<div class="x18-diagram-card" style="border-color: rgba(74, 108, 247, 0.4) !important;">
+<div class="card-icon">💻</div>
+<div class="card-title">10% Dev Fund</div>
+<div class="card-desc">Continuous build & engineering resources.</div>
+</div>
+</div>
+</div>
 
 ---
 

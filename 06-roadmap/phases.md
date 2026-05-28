@@ -175,24 +175,79 @@
 
 ## Timeline Summary
 
-```
-2026                        2027                        2028+
-│                           │                           │
-├── Q2-Q3: GENESIS ◄ NOW   ├── Q2-Q3: FUSION           ├── DOMINION
-│   • Whitepaper ✅         │   • 🚀 MAINNET            │   • 20+ chains
-│   • Node Sale 🔄          │   • TGE                   │   • 1M+ users
-│   • Fundraising 🔄        │   • Perp launch           │   • Full DAO
-│   • Platform building 🔄  │   • AI Bots v2            │   • Game v2
-│   • Team building 🔄      │   • Game Alpha            │   • RWA
-│                           │   • Cross-chain           │   • Institutional
-├── Q4: IGNITION            │                           │
-│   • Testnet               ├── Q4-Q1/28: INTELLIGENCE  │
-│   • Core engine           │   • Solana                │
-│   • AI Bots v1            │   • AI full suite         │
-│   • Audit #1              │   • Game v1.0             │
-│   • Node perks live       │   • Plugin mkt            │
-│                           │   • Mobile v1             │
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">ROADMAP TIMELINE SUMMARY</div>
+<div class="x18-flow-process">
+<div class="x18-flow-step" style="border-left: 4px solid #f7b32b;">
+<div class="step-num" style="background: rgba(247, 179, 43, 0.1); border-color: #f7b32b; color: #f7b32b;">0</div>
+<div class="step-content">
+<strong style="color: #f7b32b;">Q2-Q3 2026: GENESIS (In Progress)</strong>
+<ul style="margin: 4px 0 0 0; padding-left: 16px; font-size: 12px; color: #b0b7c3;">
+<li>Whitepaper published ✅</li>
+<li>Node Sale program active 🔄</li>
+<li>Seed Round fundraising 🔄</li>
+<li>Core platform & team building 🔄</li>
+</ul>
+</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step" style="border-left: 4px solid #3498db;">
+<div class="step-num" style="background: rgba(52, 152, 219, 0.1); border-color: #3498db; color: #3498db;">1</div>
+<div class="step-content">
+<strong style="color: #3498db;">Q4 2026 - Q1 2027: IGNITION</strong>
+<ul style="margin: 4px 0 0 0; padding-left: 16px; font-size: 12px; color: #b0b7c3;">
+<li>Public Testnet live</li>
+<li>Core matching engine testing</li>
+<li>AI Bots v1 prototypes</li>
+<li>Security Audit #1 completed</li>
+<li>Node holder benefits activated</li>
+</ul>
+</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step" style="border-left: 4px solid #2ecc71;">
+<div class="step-num" style="background: rgba(46, 204, 113, 0.1); border-color: #2ecc71; color: #2ecc71;">2</div>
+<div class="step-content">
+<strong style="color: #2ecc71;">Q2-Q3 2027: FUSION</strong>
+<ul style="margin: 4px 0 0 0; padding-left: 16px; font-size: 12px; color: #b0b7c3;">
+<li>🚀 MAINNET launch on 4+ chains</li>
+<li>$X18 Token TGE & public listing</li>
+<li>Perpetuals trading engine live</li>
+<li>AI Bots v2 suite & Smart Routing</li>
+<li>X18 Game Alpha release</li>
+</ul>
+</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step" style="border-left: 4px solid #9b51e0;">
+<div class="step-num" style="background: rgba(155, 81, 224, 0.1); border-color: #9b51e0; color: #9b51e0;">3</div>
+<div class="step-content">
+<strong style="color: #9b51e0;">Q4 2027 - Q1 2028: INTELLIGENCE</strong>
+<ul style="margin: 4px 0 0 0; padding-left: 16px; font-size: 12px; color: #b0b7c3;">
+<li>Solana & non-EVM integrations</li>
+<li>Full AI Brain v2 (Portfolio Pilot, sentiment analysis)</li>
+<li>X18 Game v1.0 official launch</li>
+<li>Plugin and Strategy Marketplace open</li>
+<li>Official Mobile App v1.0</li>
+</ul>
+</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step" style="border-left: 4px solid #e74c3c;">
+<div class="step-num" style="background: rgba(231, 76, 60, 0.1); border-color: #e74c3c; color: #e74c3c;">4</div>
+<div class="step-content">
+<strong style="color: #e74c3c;">2028+: DOMINION</strong>
+<ul style="margin: 4px 0 0 0; padding-left: 16px; font-size: 12px; color: #b0b7c3;">
+<li>Support for 20+ chains</li>
+<li>Target: 1,000,000+ active users</li>
+<li>Fully autonomous decentralized DAO</li>
+<li>Game v2.0 metaverse & mobile gaming</li>
+<li>Real World Asset (RWA) integrations</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 
 ---
 

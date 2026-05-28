@@ -40,20 +40,39 @@ PancakeSwap V2/V3/V4, ApolloX, Venus, BiSwap, Thena, SushiSwap, Curve, Balancer,
 ## Intent-Based Execution
 
 ### Flow
-```
-1. User: "Buy 100 BNB with my USDC, best price"
-         │
-2. X18 Brain: Scan all sources, all chains
-         │
-3. Options presented:
-   ├── Option A: 100% on Arbitrum — $250,050 — ⚡ 2s
-   ├── Option B: 70% Arb + 30% Base — $249,800 — ⏱️ 15s
-   └── Option C: AI Optimized — $249,650 — ⏱️ 8s ★ Recommended
-         │
-4. User selects → Resolver network executes
-         │
-5. Settlement → Tokens in user wallet
-```
+<div class="x18-flow-process">
+<div class="x18-flow-step">
+<div class="step-num">1</div>
+<div class="step-content"><strong>User Request:</strong> "Buy 100 BNB with my USDC, best price"</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">2</div>
+<div class="step-content"><strong>X18 Brain Scan:</strong> Analyzes all liquidity sources and chain combinations in real-time.</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">3</div>
+<div class="step-content">
+<strong>Options generation:</strong>
+<ul style="margin: 4px 0 0 0; padding-left: 16px; font-size: 12px; color: #b0b7c3;">
+<li>Option A: 100% on Arbitrum — $250,050 — ⚡ 2s</li>
+<li>Option B: 70% Arb + 30% Base — $249,800 — ⏱️ 15s</li>
+<li>Option C (AI Optimized): $249,650 — ⏱️ 8s ★ Recommended</li>
+</ul>
+</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">4</div>
+<div class="step-content"><strong>Selection & Execution:</strong> User chooses option and resolver network executes intent.</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">5</div>
+<div class="step-content"><strong>Settlement:</strong> Tokens finalized directly into user's wallet.</div>
+</div>
+</div>
 
 ### Gasless Mode
 - Users DO NOT need to hold native tokens (BNB, MATIC, etc.) for gas

@@ -25,19 +25,30 @@ Most crypto projects raise funds by **directly selling tokens** (ICO/IDO/IEO). T
 
 ### Reason #1: LOCKED TOKENS = NO DUMP
 
-```
-TRADITIONAL METHOD:
-Buy token → Receive token → Sell immediately → Price crash ❌
-
-X18ex METHOD:
-Buy Node → Tokens are LOCKED → Mining gradually pays out 8-10%/month ✅
-                              │
-                              ├── Month 1: only 8-10% unlock
-                              ├── Month 2: additional 8-10%
-                              ├── ...
-                              └── Month 12: ~100% unlock
-                                  (but by then the protocol is operational)
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">UNLOCKED COMPARISON</div>
+<div class="x18-diagram-row cols-2">
+<div class="x18-diagram-card">
+<div class="card-icon">❌</div>
+<div class="card-title">Traditional Method</div>
+<div class="card-desc" style="text-align: left;">
+Buy token ➜ Receive token ➜ Sell immediately ➜ Price crash!
+</div>
+</div>
+<div class="x18-diagram-card" style="border-color: rgba(16, 185, 129, 0.4) !important;">
+<div class="card-icon">✅</div>
+<div class="card-title" style="color: #34d399;">X18ex Method</div>
+<div class="card-desc" style="text-align: left;">
+Buy Node ➜ Tokens are LOCKED ➜ Vesting through monthly mining yields:
+<ul style="margin: 4px 0 0 0; padding-left: 12px; font-size: 11px; color: #b0b7c3;">
+<li>Month 1: 8-10% unlocked</li>
+<li>Month 2: +8-10% unlocked</li>
+<li>Month 12: ~100% unlocked (once protocol utility is live)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 
 **Why is it smart?**
 - No one can dump the entire batch of tokens at once
@@ -51,24 +62,18 @@ Buy Node → Tokens are LOCKED → Mining gradually pays out 8-10%/month ✅
 
 This is an **exclusive** mechanism that very few projects dare to implement:
 
-```
-Real scenario:
-
-Total Nodes: 2,300 packages
-Sold: 1,800 packages (78%)
-Unsold: 500 packages
-
-Tokens corresponding to 500 unsold packages: ~2,000,000 $X18
-                    │
-                    ▼
-            🔥 PERMANENT BURN
-            (Automated by smart contract, no interference)
-                    │
-                    ▼
-        Total Supply: 18,000,000 → 16,000,000
-        = Decrease -11.1%
-        = Each remaining token increases in value by ~12.5%
-```
+<div class="x18-diagram-box" style="max-width: 500px; margin: 30px auto;">
+<div class="x18-diagram-title" style="color: #ef4444;">🔥 UNSOLD BURN SCENARIO</div>
+<ul class="x18-node-details" style="margin: 10px 0 !important;">
+<li><span class="label">Total Nodes Created</span><span class="value">2,300 packages</span></li>
+<li><span class="label">Nodes Sold (78%)</span><span class="value">1,800 packages</span></li>
+<li><span class="label">Unsold Nodes</span><span class="value">500 packages</span></li>
+<li><span class="label">Burned Tokens (from unsold)</span><span class="value" style="color: #ef4444;">~2,000,000 $X18</span></li>
+<li style="border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 12px; margin-bottom: 8px !important;"></li>
+<li><span class="label">Total Supply Reduction</span><span class="value" style="color: #ef4444;">18M ➜ 16M (-11.1%)</span></li>
+<li><span class="label">Price Scarcity Factor Boost</span><span class="value" style="color: #34d399;">+12.5%</span></li>
+</ul>
+</div>
 
 **Why is it smart?**
 - If all are sold → Excellent! The team has enough capital for development
@@ -104,21 +109,36 @@ Node Sale is not just about selling tokens — it's about selling **permanent be
 
 ### Reason #4: GENERATE REVENUE BEFORE HAVING A PRODUCT
 
-```
-Timeline:
-
-Phase 0 (Current):
-├── Node Sale = $8.5M-$18M revenue (if 70-100% sold)
-├── Revenue used for:
-│   ├── 50% → Development (build platform)
-│   ├── 20% → Liquidity pool (for mainnet launch)
-│   ├── 15% → Marketing & community
-│   ├── 10% → Legal & compliance
-│   └── 5%  → Reserve
-│
-Phase 1: Platform has FULL development capital
-Phase 2: Mainnet launch with ready liquidity
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">Phase 0 Funding Allocation ($8.5M - $18M Projection)</div>
+<div class="x18-diagram-row cols-5">
+<div class="x18-diagram-card">
+<div class="card-icon">💻</div>
+<div class="card-title">50% Development</div>
+<div class="card-desc">Building core platform components</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">💧</div>
+<div class="card-title">20% Liquidity</div>
+<div class="card-desc">Mainnet liquidity launch pool</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">📣</div>
+<div class="card-title">15% Marketing</div>
+<div class="card-desc">Marketing & community development</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">⚖️</div>
+<div class="card-title">10% Legal</div>
+<div class="card-desc">Regulatory compliance fees</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">🛡️</div>
+<div class="card-title">5% Reserve</div>
+<div class="card-desc">Emergency reserve allocation</div>
+</div>
+</div>
+</div>
 
 **Why is it smart?**
 - Not 100% dependent on VC (venture capital)
@@ -132,18 +152,25 @@ Phase 2: Mainnet launch with ready liquidity
 
 Instead of airdropping millions of tokens at once (causing sell pressure), X18ex uses a **mining mechanism** to distribute tokens gradually:
 
-```
-Traditional distribution:        X18ex distribution:
-
-  │ ▓▓▓▓▓                       │
-  │ ▓▓▓▓▓  ← Airdrop dump      │ ░░
-  │ ▓▓▓▓▓                       │ ░░░░
-  │                              │ ░░░░░░
-  │                              │ ░░░░░░░░   ← Smooth distribution
-  │                              │ ░░░░░░░░░░
-  └──────────                    └──────────────
-  Time                           Time
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">Distribution Curves</div>
+<div class="x18-diagram-row cols-2">
+<div class="x18-diagram-card">
+<div class="card-icon">❌</div>
+<div class="card-title">Traditional Cliff Unlock</div>
+<div class="card-desc" style="text-align: left;">
+Massive unlock at once triggers a sudden peak supply in the market, causing dramatic price correction due to speculative selling pressure.
+</div>
+</div>
+<div class="x18-diagram-card" style="border-color: rgba(16, 185, 129, 0.4) !important;">
+<div class="card-icon">✅</div>
+<div class="card-title" style="color: #34d399;">X18ex Smooth Mining Yields</div>
+<div class="card-desc" style="text-align: left;">
+Token supply increases slowly and organically month-over-month via node mining, allowing the market time to absorb tokens through direct protocol utility.
+</div>
+</div>
+</div>
+</div>
 
 **Why is it smart?**
 - No market shock with a large amount of tokens at once
@@ -155,27 +182,22 @@ Traditional distribution:        X18ex distribution:
 
 ### Reason #6: $1 PRICE IS AN ANCHOR — NOT A CEILING
 
-```
-Node Sale: $1.00/token (reference price)
-           │
-           │  Development phase (Phase 0-1)
-           │  Tokens are locked → no market price
-           │
-           ▼
-TGE (Phase 2): Price determined by the market
-           │
-           │  Factors at TGE time:
-           │  ├── Supply has decreased (burn)
-           │  ├── Demand exists (utility live)
-           │  ├── Volume exists (testnet → mainnet)
-           │  ├── Community exists (2,300+ node holders + more)
-           │  └── Product is live (not vapor)
-           │
-           ▼
-      Market-driven price
-      (Historically, well-executed projects 
-       launch 3-10x above seed/private price)
-```
+<div class="x18-flow-process">
+<div class="x18-flow-step">
+<div class="step-num">1</div>
+<div class="step-content"><strong>Node Sale Launch:</strong> Reference price is set at $1.00 per token. Lowest possible early buyer price.</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">2</div>
+<div class="step-content"><strong>Lock & Vesting:</strong> Tokens are locked during platform building phases (Phases 0-1), preventing speculative dumps.</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">3</div>
+<div class="step-content"><strong>TGE & Mainnet:</strong> Trading goes live. Market pricing is established, supported by actual volume, active utility demand, and slashed supply.</div>
+</div>
+</div>
 
 **Why is it smart?**
 - Node buyers purchase at $1 = the **lowest possible price**
@@ -201,23 +223,19 @@ TGE (Phase 2): Price determined by the market
 
 ## Conclusion: Node Sale = Foundation for Price Appreciation
 
-```
-╔═══════════════════════════════════════════════════════════╗
-║                NODE SALE → PRICE APPRECIATION FOR $X18   ║
-╠═══════════════════════════════════════════════════════════╣
-║                                                           ║
-║  1. Token LOCK     → No dump  → Price stability           ║
-║  2. Unsold BURN    → Supply ↓    → Scarcity ↑             ║
-║  3. Gradual mining → No shock    → Smooth distribution    ║
-║  4. Permanent perks→ Hold long   → Less sell pressure     ║
-║  5. Early revenue  → Build fast  → Product on time        ║
-║  6. $1 anchor      → Early buyer → Maximum upside         ║
-║                                                           ║
-║  RESULT: Every mechanism is aimed at PRICE APPRECIATION   ║
-║  for $X18 holders. No mechanism causes PRICE DECREASE.    ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">NODE SALE APPRECIATION SUMMARY</div>
+<ul class="x18-node-details" style="margin: 10px 0 !important;">
+<li><span class="label">1. Token Locking</span><span class="value">No instant dumps ➜ Price stability</span></li>
+<li><span class="label">2. Unsold Burning</span><span class="value">Supply drops ➜ Scarcity increases</span></li>
+<li><span class="label">3. Gradual Mining</span><span class="value">Organic distribution ➜ Zero supply shocks</span></li>
+<li><span class="label">4. Permanent Perks</span><span class="value">Strong holding incentive ➜ Minimal sell pressure</span></li>
+<li><span class="label">5. Upfront Funding</span><span class="value">Guarantees execution ➜ High product quality</span></li>
+</ul>
+<div style="font-size: 13px; color: #10b981; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 14px; margin-top: 10px; font-weight: 700;">
+✔ RESULT: Every built-in mechanism works towards price appreciation.
+</div>
+</div>
 
 > ⚠️ **Disclaimer**: The above analysis is based on the economic mechanisms designed into the protocol. Actual token prices depend on market conditions, adoption rate, and many external factors. This is NOT a commitment or guarantee of future prices.
 

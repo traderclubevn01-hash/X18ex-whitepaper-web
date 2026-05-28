@@ -9,25 +9,57 @@ Over **60% of volume** on leading DEXs comes from bots and automated strategies.
 ## Developer Portal
 
 ### Overview
-```
-┌─────────────────────────────────────────────────────────────┐
-│                   X18 DEVELOPER PORTAL                      │
-│                                                             │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌────────────┐  │
-│  │ API Keys │  │ Usage    │  │ Error    │  │ Webhook    │  │
-│  │ Manage   │  │ Analytics│  │ Logs     │  │ Config     │  │
-│  └──────────┘  └──────────┘  └──────────┘  └────────────┘  │
-│                                                             │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌────────────┐  │
-│  │ SDK      │  │ Sandbox  │  │ Strategy │  │ Backtest   │  │
-│  │ Docs     │  │ Testing  │  │ Templates│  │ Engine     │  │
-│  └──────────┘  └──────────┘  └──────────┘  └────────────┘  │
-│                                                             │
-│  Rate Limits: 1,000 req/min (Free) │ 10,000 (Pro $X18)     │
-│  WebSocket Streams: 50 (Free) │ 500 (Pro)                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">X18 DEVELOPER PORTAL</div>
+<div class="x18-diagram-row cols-4">
+<div class="x18-diagram-card">
+<div class="card-icon">🔑</div>
+<div class="card-title">API Keys</div>
+<div class="card-desc">Create and manage access credentials</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">📊</div>
+<div class="card-title">Analytics</div>
+<div class="card-desc">Track API usage & resource metrics</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">📝</div>
+<div class="card-title">Error Logs</div>
+<div class="card-desc">Real-time troubleshooting & traces</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">🪝</div>
+<div class="card-title">Webhooks</div>
+<div class="card-desc">Configure automated event streams</div>
+</div>
+</div>
+<div class="x18-diagram-row cols-4">
+<div class="x18-diagram-card">
+<div class="card-icon">📚</div>
+<div class="card-title">SDK Docs</div>
+<div class="card-desc">Guides for Python, TS, Rust, & Go</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">🧪</div>
+<div class="card-title">Sandbox</div>
+<div class="card-desc">Zero-risk simulated environment</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">🧱</div>
+<div class="card-title">Templates</div>
+<div class="card-desc">Pre-built trading templates</div>
+</div>
+<div class="x18-diagram-card">
+<div class="card-icon">⏱️</div>
+<div class="card-title">Backtesting</div>
+<div class="card-desc">Run historical simulations</div>
+</div>
+</div>
+<div style="font-size: 13px; color: #b0b7c3; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 14px; margin-top: 10px; font-family: var(--vp-font-family-mono);">
+⚡ <strong>Rate Limits:</strong> 1,000 req/min (Free) | 10,000 (Pro via $X18)<br/>
+📡 <strong>WS Streams:</strong> 50 (Free) | 500 (Pro)
+</div>
+</div>
 
 ---
 
@@ -176,18 +208,65 @@ THEN buy("BNB/USDC", amount=portfolio.balance * 0.1, type="limit", offset=-0.5%)
 
 ## Bot Performance Leaderboard
 
-```
-╔═══════════════════════════════════════════════════════════════╗
-║                   🏆 BOT LEADERBOARD                        ║
-╠═══════════════════════════════════════════════════════════════╣
-║  #  │ Strategy         │ 30d Return │ Sharpe │ Max DD │ Subs ║
-║  1  │ AlphaGrid Pro    │ +18.5%     │ 2.8    │ -4.2%  │ 1.2K ║
-║  2  │ MomentumX        │ +15.2%     │ 2.3    │ -7.1%  │ 890  ║
-║  3  │ CrossArb v3      │ +12.8%     │ 3.1    │ -2.1%  │ 2.3K ║
-║  4  │ DCA Master       │ +8.4%      │ 1.9    │ -3.5%  │ 5.6K ║
-║  5  │ SmartDIP         │ +7.2%      │ 1.7    │ -5.8%  │ 3.1K ║
-╚═══════════════════════════════════════════════════════════════╝
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">🏆 BOT PERFORMANCE LEADERBOARD</div>
+<div style="overflow-x: auto;">
+<table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; color: #cbd5e1;">
+<thead>
+<tr style="border-bottom: 2px solid rgba(255,255,255,0.1); color: #fff;">
+<th style="padding: 10px;">Rank</th>
+<th style="padding: 10px;">Strategy</th>
+<th style="padding: 10px;">30d Return</th>
+<th style="padding: 10px;">Sharpe</th>
+<th style="padding: 10px;">Max DD</th>
+<th style="padding: 10px;">Subs</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+<td style="padding: 10px;">🥇 1</td>
+<td style="padding: 10px; font-weight: 700; color: #fff;">AlphaGrid Pro</td>
+<td style="padding: 10px; color: #10b981; font-weight: 600;">+18.5%</td>
+<td style="padding: 10px;">2.8</td>
+<td style="padding: 10px; color: #ef4444;">-4.2%</td>
+<td style="padding: 10px;">1.2K</td>
+</tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+<td style="padding: 10px;">🥈 2</td>
+<td style="padding: 10px; font-weight: 700; color: #fff;">MomentumX</td>
+<td style="padding: 10px; color: #10b981; font-weight: 600;">+15.2%</td>
+<td style="padding: 10px;">2.3</td>
+<td style="padding: 10px; color: #ef4444;">-7.1%</td>
+<td style="padding: 10px;">890</td>
+</tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+<td style="padding: 10px;">🥉 3</td>
+<td style="padding: 10px; font-weight: 700; color: #fff;">CrossArb v3</td>
+<td style="padding: 10px; color: #10b981; font-weight: 600;">+12.8%</td>
+<td style="padding: 10px;">3.1</td>
+<td style="padding: 10px; color: #ef4444;">-2.1%</td>
+<td style="padding: 10px;">2.3K</td>
+</tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+<td style="padding: 10px;">4</td>
+<td style="padding: 10px; font-weight: 700; color: #fff;">DCA Master</td>
+<td style="padding: 10px; color: #10b981; font-weight: 600;">+8.4%</td>
+<td style="padding: 10px;">1.9</td>
+<td style="padding: 10px; color: #ef4444;">-3.5%</td>
+<td style="padding: 10px;">5.6K</td>
+</tr>
+<tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+<td style="padding: 10px;">5</td>
+<td style="padding: 10px; font-weight: 700; color: #fff;">SmartDIP</td>
+<td style="padding: 10px; color: #10b981; font-weight: 600;">+7.2%</td>
+<td style="padding: 10px;">1.7</td>
+<td style="padding: 10px; color: #ef4444;">-5.8%</td>
+<td style="padding: 10px;">3.1K</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
 ---
 

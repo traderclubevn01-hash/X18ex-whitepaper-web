@@ -9,29 +9,58 @@ X18 DAO adheres to the **Progressive Decentralization** model — starting from 
 
 ## Governance Structure
 
-```
-                    ┌───────────────────┐
-                    │   $X18 HOLDERS    │
-                    │   (Token Voters)  │
-                    └────────┬──────────┘
-                             │ vote
-                    ┌────────▼──────────┐
-                    │    X18 DAO        │
-                    │   (On-chain)      │
-                    └────────┬──────────┘
-                             │
-              ┌──────────────┼──────────────┐
-              │              │              │
-     ┌────────▼──────┐ ┌────▼───────┐ ┌────▼──────┐
-     │   Technical   │ │  Economic  │ │  Growth   │
-     │   Council     │ │  Council   │ │  Council  │
-     │               │ │            │ │           │
-     │ • Protocol    │ │ • Fees     │ │ • Grants  │
-     │   upgrades    │ │ • Burns    │ │ • MKT     │
-     │ • Security    │ │ • Treasury │ │ • Partners│
-     │ • Audits      │ │ • Tokenomics│ │ • Events │
-     └───────────────┘ └────────────┘ └───────────┘
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">Governance Structure</div>
+
+<div class="x18-diagram-row cols-1">
+<div class="x18-diagram-card" style="max-width: 320px; margin: 0 auto; border-color: rgba(74, 108, 247, 0.4) !important;">
+<div class="card-icon">👥</div>
+<div class="card-title">X18 HOLDERS</div>
+<div class="card-desc">Token Voters holding $X18 or veX18</div>
+</div>
+</div>
+
+<div class="x18-flow-arrow">▼ Vote</div>
+
+<div class="x18-diagram-row cols-1">
+<div class="x18-diagram-card" style="max-width: 360px; margin: 0 auto; border-color: rgba(0, 242, 254, 0.4) !important;">
+<div class="card-icon">🏛️</div>
+<div class="card-title">X18 DAO</div>
+<div class="card-desc">On-chain decentralized execution & consensus</div>
+</div>
+</div>
+
+<div class="x18-flow-arrow">▼ Directs</div>
+
+<div class="x18-diagram-row cols-3">
+<div class="x18-diagram-card">
+<div class="card-icon">🛠️</div>
+<div class="card-title">Technical Council</div>
+<div class="card-desc">
+• Protocol upgrades<br/>
+• Security & audits
+</div>
+</div>
+
+<div class="x18-diagram-card">
+<div class="card-icon">📈</div>
+<div class="card-title">Economic Council</div>
+<div class="card-desc">
+• Fees & burns<br/>
+• Treasury & tokenomics
+</div>
+</div>
+
+<div class="x18-diagram-card">
+<div class="card-icon">🌱</div>
+<div class="card-title">Growth Council</div>
+<div class="card-desc">
+• Grants & marketing<br/>
+• Partners & events
+</div>
+</div>
+</div>
+</div>
 
 ---
 

@@ -49,33 +49,22 @@ $$ \frac{dB}{dt} = \kappa \cdot \int_{0}^{t} \left( \frac{\gamma \cdot V(\tau)}{
 
 ## Burn Projection Model
 
-```
-Supply (M)
-18.0 ┤─╮
-     │  ╰─╮
-17.0 ┤     ╰─╮
-     │        ╰──╮
-16.0 ┤            ╰──╮
-     │                ╰──╮
-15.0 ┤                    ╰───╮
-     │                        ╰───╮
-14.0 ┤                            ╰───╮
-     │                                ╰───╮
-13.0 ┤                                    ╰───╮
-     │                                        ╰────╮
-12.0 ┤                                             ╰────╮
-     │                                                   ╰────╮
-11.0 ┤                                                        ╰──╮
-     │                                                            ╰──╮
-10.0 ┤                                                               ╰─╮
-     │                                                                  ╰─╮
- 9.0 ┤                                                                    ╰─╮
-     │                                                                      ╰╮
- 8.1 ┤─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ╰─ TARGET: 8,131,499
-     │
-     ┤────────────────────────────────────────────────────────────────────────
-     Y1    Y2    Y3    Y4    Y5    Y6    Y7    Y8    Y9    Y10
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">🔥 10-YEAR SUPPLY REDUCTION TARGETS</div>
+<ul class="x18-node-details" style="margin: 10px 0 !important;">
+<li><span class="label">📅 Initial Supply</span><span class="value">18,000,000 $X18</span></li>
+<li><span class="label">📅 Year 1</span><span class="value">17,750,000 Remaining</span></li>
+<li><span class="label">📅 Year 2</span><span class="value">17,250,000 Remaining</span></li>
+<li><span class="label">📅 Year 3</span><span class="value">16,450,000 Remaining</span></li>
+<li><span class="label">📅 Year 4</span><span class="value">15,450,000 Remaining</span></li>
+<li><span class="label">📅 Year 5</span><span class="value">14,350,000 Remaining</span></li>
+<li style="border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 12px; margin-bottom: 8px !important;"></li>
+<li><span class="label">📅 Year 10 Target</span><span class="value" style="color: #34d399;">8,131,499 $X18 (Permanent Floor)</span></li>
+</ul>
+<div style="font-size: 12px; color: #fbbf24; background: rgba(245, 158, 11, 0.05); padding: 10px; border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.15); margin-top: 8px;">
+🚀 <strong>Total deflation: -54.8%</strong>. When the target of 8,131,499 is met, the burn mechanism halts permanently.
+</div>
+</div>
 
 ### Conservative Estimates
 

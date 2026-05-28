@@ -8,43 +8,73 @@ X18 Brain is the **deeply integrated** artificial intelligence layer in every op
 
 ## X18 Brain Architecture
 
-```
-                    ┌─────────────────────┐
-                    │    USER ACTIONS      │
-                    │  (Swap, Trade, LP)   │
-                    └──────────┬──────────┘
-                               │
-                    ┌──────────▼──────────┐
-                    │    X18 BRAIN HUB     │
-                    │   (Orchestrator)     │
-                    └──┬───┬───┬───┬───┬──┘
-                       │   │   │   │   │
-          ┌────────────┘   │   │   │   └────────────┐
-          │                │   │   │                │
-    ┌─────▼─────┐   ┌─────▼───▼───▼─────┐   ┌─────▼─────┐
-    │   Smart    │   │    Risk     MEV   │   │ Portfolio  │
-    │  Router    │   │  Guardian  Shield │   │   Pilot    │
-    │            │   │                   │   │            │
-    │ • Path     │   │ • Position risk   │   │ • Auto     │
-    │   finding  │   │ • Liq. warning    │   │   rebalance│
-    │ • Gas      │   │ • Front-run       │   │ • Yield    │
-    │   predict  │   │   detection       │   │   optimize │
-    │ • Slippage │   │ • Sandwich        │   │ • Tax-loss │
-    │   estimate │   │   prevention      │   │   harvest  │
-    └────────────┘   └───────────────────┘   └────────────┘
-          │                    │                     │
-          └────────────────────┼─────────────────────┘
-                               │
-                    ┌──────────▼──────────┐
-                    │   ML MODEL LAYER    │
-                    │                     │
-                    │ • Price Prediction   │
-                    │ • Volatility Models  │
-                    │ • Liquidity Scoring  │
-                    │ • Sentiment Analysis │
-                    │ • Pattern Detection  │
-                    └─────────────────────┘
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">X18 Brain Architecture</div>
+
+<div class="x18-diagram-row cols-1">
+<div class="x18-diagram-card" style="max-width: 320px; margin: 0 auto; border-color: rgba(74, 108, 247, 0.4) !important;">
+<div class="card-icon">🖱️</div>
+<div class="card-title">USER ACTIONS</div>
+<div class="card-desc">Swap, Trade, Add/Remove Liquidity</div>
+</div>
+</div>
+
+<div class="x18-flow-arrow">▼</div>
+
+<div class="x18-diagram-row cols-1">
+<div class="x18-diagram-card" style="max-width: 360px; margin: 0 auto; border-color: rgba(0, 242, 254, 0.4) !important;">
+<div class="card-icon">🛡️</div>
+<div class="card-title">X18 BRAIN HUB</div>
+<div class="card-desc">Central orchestrator parsing user intent & orchestrating processing</div>
+</div>
+</div>
+
+<div class="x18-flow-arrow">▼</div>
+
+<div class="x18-diagram-row cols-3">
+<div class="x18-diagram-card">
+<div class="card-icon">⛓️</div>
+<div class="card-title">Smart Router</div>
+<div class="card-desc">
+• Path finding<br/>
+• Gas prediction<br/>
+• Slippage estimation
+</div>
+</div>
+
+<div class="x18-diagram-card">
+<div class="card-icon">🛡️</div>
+<div class="card-title">Risk Guardian & MEV</div>
+<div class="card-desc">
+• Position risk scoring<br/>
+• Liquidation warning<br/>
+• Front-run/Sandwich block
+</div>
+</div>
+
+<div class="x18-diagram-card">
+<div class="card-icon">💼</div>
+<div class="card-title">Portfolio Pilot</div>
+<div class="card-desc">
+• Auto rebalancing<br/>
+• Yield optimization<br/>
+• Tax-loss harvesting
+</div>
+</div>
+</div>
+
+<div class="x18-flow-arrow">▼</div>
+
+<div class="x18-diagram-row cols-1">
+<div class="x18-diagram-card" style="border-color: rgba(155, 81, 224, 0.4) !important;">
+<div class="card-icon">🧠</div>
+<div class="card-title">ML MODEL LAYER</div>
+<div class="card-desc">
+Price Prediction • Volatility Models • Liquidity Scoring • Sentiment Analysis • Pattern Detection
+</div>
+</div>
+</div>
+</div>
 
 ---
 
@@ -95,32 +125,63 @@ X18 Brain Router:
 ### Real-time Risk Dashboard
 Each position and portfolio is monitored by Risk Guardian:
 
-```
-╔═══════════════════════════════════════════╗
-║           RISK GUARDIAN DASHBOARD         ║
-╠═══════════════════════════════════════════╣
-║                                           ║
-║  Portfolio Health:  ██████████░░  83%     ║
-║  Risk Level:        🟡 MODERATE           ║
-║                                           ║
-║  Positions:                               ║
-║  ├─ BNB Long 5x    Risk: 🔴 HIGH         ║
-║  │  └─ Liq. Price: $2,150 (12% away)     ║
-║  ├─ BTC Perp 2x    Risk: 🟢 LOW          ║
-║  │  └─ Liq. Price: $48,000 (35% away)    ║
-║  └─ SOL Spot       Risk: 🟢 SAFE         ║
-║                                           ║
-║  ⚠️ ALERT: BNB volatility spike predicted ║
-║     in next 2 hours. Consider reducing    ║
-║     leverage or adding collateral.        ║
-║                                           ║
-║  🤖 AI Suggestion:                        ║
-║     Add 2,000 USDC collateral to improve  ║
-║     health factor from 1.2 → 1.8         ║
-║     [Accept] [Customize] [Dismiss]        ║
-║                                           ║
-╚═══════════════════════════════════════════╝
-```
+<div class="x18-dashboard-mockup">
+<div class="x18-dashboard-header">
+<div class="x18-header-dots"><span></span><span></span><span></span></div>
+<div class="x18-header-title">RISK GUARDIAN DASHBOARD v1.0.4</div>
+</div>
+<div class="x18-dashboard-body">
+<div class="x18-metric-row">
+<div class="x18-metric-item">
+<div class="x18-metric-label">Risk Level</div>
+<div class="x18-metric-value" style="color: #fbbf24;">🟡 MODERATE</div>
+</div>
+<div class="x18-metric-bar-container">
+<div class="x18-metric-label">Portfolio Health</div>
+<div class="x18-metric-bar-bg"><div class="x18-metric-bar-fill" style="width: 83%; background: linear-gradient(90deg, #fbbf24, #10b981);"></div></div>
+<div class="x18-metric-bar-percent">83%</div>
+</div>
+</div>
+
+<div class="x18-db-positions">
+<div class="x18-db-pos-item">
+<div>
+<span class="pos-name">BNB Long 5x</span>
+<span class="pos-details"> — Liq. Price: $2,150 (12% away)</span>
+</div>
+<span class="pos-badge high">🔴 HIGH RISK</span>
+</div>
+<div class="x18-db-pos-item">
+<div>
+<span class="pos-name">BTC Perp 2x</span>
+<span class="pos-details"> — Liq. Price: $48,000 (35% away)</span>
+</div>
+<span class="pos-badge low">🟢 LOW RISK</span>
+</div>
+<div class="x18-db-pos-item">
+<div>
+<span class="pos-name">SOL Spot</span>
+<span class="pos-details"> — Safe and unleveraged</span>
+</div>
+<span class="pos-badge safe">🟢 SAFE</span>
+</div>
+</div>
+
+<div class="x18-db-alert">
+⚠️ <strong>ALERT:</strong> BNB volatility spike predicted in next 2 hours. Consider reducing leverage or adding collateral.
+</div>
+
+<div class="x18-db-suggestion">
+<div class="x18-db-suggestion-title">🤖 AI Suggestion</div>
+<div class="x18-db-suggestion-text">Add 2,000 USDC collateral to improve health factor from 1.2 ➜ 1.8.</div>
+<div class="x18-db-buttons">
+<button class="x18-db-btn primary">Accept Suggestion</button>
+<button class="x18-db-btn secondary">Customize</button>
+<button class="x18-db-btn secondary">Dismiss</button>
+</div>
+</div>
+</div>
+</div>
 
 ### Risk Scoring Model
 | Factor | Weight | Data Source |
@@ -146,21 +207,39 @@ Each position and portfolio is monitored by Risk Guardian:
 | **Time-bandit** | Multiple block confirmation |
 
 ### Operational Mechanism
-```
-1. User submits trade intent (signed, encrypted)
-         │
-2. X18 Brain analyzes MEV risk score
-         │
-3. If risk HIGH:
-   ├── Route through private mempool
-   ├── Apply commit-reveal (2-phase execution)
-   └── Set tight deadline & slippage bounds
-         │
-4. If risk LOW:
-   └── Direct execution with standard protection
-         │
-5. Post-trade MEV audit log (transparent)
-```
+<div class="x18-flow-process">
+<div class="x18-flow-step">
+<div class="step-num">1</div>
+<div class="step-content"><strong>Submission:</strong> User submits trade intent (signed, encrypted).</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">2</div>
+<div class="step-content"><strong>Risk Analysis:</strong> X18 Brain analyzes transaction parameters to produce an MEV risk score.</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">3</div>
+<div class="step-content">
+<strong>If risk is HIGH:</strong>
+<ul style="margin: 4px 0 0 0; padding-left: 16px; font-size: 12px; color: #b0b7c3;">
+<li>Route transaction through a private mempool</li>
+<li>Apply commit-reveal mechanics (two-phase execution)</li>
+<li>Enforce tight execution deadlines and strict slippage bounds</li>
+</ul>
+</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">4</div>
+<div class="step-content"><strong>If risk is LOW:</strong> Direct execution with standard decentralized slippage protection.</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">5</div>
+<div class="step-content"><strong>Transparency:</strong> Transaction completes and files a transparent post-trade MEV audit log.</div>
+</div>
+</div>
 
 ---
 

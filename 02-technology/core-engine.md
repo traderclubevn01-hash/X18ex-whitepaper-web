@@ -69,41 +69,68 @@ impl<'a> UnifiedMatchingEngine<'a> {
 
 ## Core Engine Architecture
 
-```
-┌──────────────────────────────────────────────────────────┐
-│                    X18 CORE ENGINE                       │
-│                                                          │
-│  ┌─────────────────┐         ┌─────────────────────┐    │
-│  │   CLOB Engine   │◄───────►│   AMM Engine        │    │
-│  │  (Off-chain     │         │  (On-chain           │    │
-│  │   Sequencer)    │         │   Concentrated LP)   │    │
-│  │                 │         │                      │    │
-│  │ • Limit Orders  │         │ • Passive Liquidity  │    │
-│  │ • Market Orders │         │ • Custom Curves      │    │
-│  │ • Stop Orders   │         │ • Auto-rebalance     │    │
-│  │ • TWAP/VWAP     │         │ • Range Orders       │    │
-│  └────────┬────────┘         └──────────┬───────────┘    │
-│           │                             │                │
-│           ▼                             ▼                │
-│  ┌──────────────────────────────────────────────────┐    │
-│  │              UNIFIED MATCHING ENGINE              │    │
-│  │                                                   │    │
-│  │  • Best price from CLOB or AMM → auto-route       │    │
-│  │  • Smart order splitting across both engines      │    │
-│  │  • ZK-Privacy: Zero-Knowledge proofs mask order   │    │
-│  │    intent and user identity pre-execution         │    │
-│  └────────────────────┬──────────────────────────────┘    │
-│                       │                                   │
-│                       ▼                                   │
-│  ┌──────────────────────────────────────────────────┐    │
-│  │      ON-CHAIN SETTLEMENT & DATA AVAILABILITY      │    │
-│  │                                                   │    │
-│  │  • Fast execution sequenced on opBNB (L2)         │    │
-│  │  • Atomic settlement finalized on BSC (L1)        │    │
-│  │  • Trade history & Order states on BNB Greenfield │    │
-│  └──────────────────────────────────────────────────┘    │
-└──────────────────────────────────────────────────────────┘
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">X18 CORE ENGINE ARCHITECTURE</div>
+
+<div class="x18-diagram-row cols-2">
+<div class="x18-diagram-card">
+<div class="card-icon">📖</div>
+<div class="card-title">CLOB Engine</div>
+<div class="card-desc">
+<strong>Off-chain Sequencer</strong>
+<ul style="text-align: left; margin: 8px 0 0 0; padding-left: 16px; font-size: 12px; color: #b0b7c3;">
+<li>Limit Orders</li>
+<li>Market Orders</li>
+<li>Stop Orders</li>
+<li>TWAP/VWAP</li>
+</ul>
+</div>
+</div>
+
+<div class="x18-diagram-card">
+<div class="card-icon">🎛️</div>
+<div class="card-title">AMM Engine</div>
+<div class="card-desc">
+<strong>On-chain Concentrated LP</strong>
+<ul style="text-align: left; margin: 8px 0 0 0; padding-left: 16px; font-size: 12px; color: #b0b7c3;">
+<li>Passive Liquidity</li>
+<li>Custom Curves</li>
+<li>Auto-rebalance</li>
+<li>Range Orders</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="x18-flow-arrow">▼</div>
+
+<div class="x18-diagram-row cols-1">
+<div class="x18-diagram-card" style="border-color: rgba(155, 81, 224, 0.4) !important;">
+<div class="card-icon">🧠</div>
+<div class="card-title">UNIFIED MATCHING ENGINE</div>
+<div class="card-desc">
+• Best price from CLOB or AMM → auto-route<br/>
+• Smart order splitting across both engines<br/>
+• ZK-Privacy: Zero-Knowledge proofs mask order intent and user identity pre-execution
+</div>
+</div>
+</div>
+
+<div class="x18-flow-arrow">▼</div>
+
+<div class="x18-diagram-row cols-1">
+<div class="x18-diagram-card" style="border-color: rgba(0, 242, 254, 0.4) !important;">
+<div class="card-icon">⛓️</div>
+<div class="card-title">ON-CHAIN SETTLEMENT & DATA AVAILABILITY</div>
+<div class="card-desc">
+• Fast execution sequenced on opBNB (L2)<br/>
+• Atomic settlement finalized on BSC (L1)<br/>
+• Trade history & Order states on BNB Greenfield
+</div>
+</div>
+</div>
+</div>
+
 
 ---
 
@@ -139,23 +166,22 @@ impl<'a> UnifiedMatchingEngine<'a> {
 
 X18ex implements a **Unified Cross-Margin** system — all positions, spot balances, and lending deposits are collectively considered as collateral:
 
-```
-┌─────────────────────────────────────────┐
-│         UNIFIED MARGIN ACCOUNT          │
-│                                         │
-│  Spot: 100 BNB ($60,000)               │
-│  Perp: Long BTC 2x ($20,000)           │
-│  Lending: 5,000 USDC deposited         │
-│  ────────────────────────────           │
-│  Total Margin: $50,000                  │
-│  Used Margin:  $20,000 (Perp)           │
-│  Free Margin:  $30,000                  │
-│  Health Factor: 2.50 ✅                 │
-│                                         │
-│  💡 Unrealized profit from BNB spot     │
-│     offsets BTC perp margin requirement │
-└─────────────────────────────────────────┘
-```
+<div class="x18-diagram-box" style="max-width: 480px; margin: 30px auto;">
+<div class="x18-diagram-title" style="color: #60a5fa;">UNIFIED MARGIN ACCOUNT</div>
+<ul class="x18-node-details" style="margin: 10px 0 !important;">
+<li><span class="label">💰 Spot Assets</span><span class="value" style="color: #34d399;">100 BNB ($60,000)</span></li>
+<li><span class="label">📈 Perp Positions</span><span class="value" style="color: #60a5fa;">Long BTC 2x ($20,000)</span></li>
+<li><span class="label">🏦 Lending Deposits</span><span class="value" style="color: #a78bfa;">5,000 USDC</span></li>
+<li style="border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 12px; margin-bottom: 8px !important;"></li>
+<li><span class="label">Total Collateral Value</span><span class="value">$50,000</span></li>
+<li><span class="label">Used Margin</span><span class="value">$20,000</span></li>
+<li><span class="label">Free Margin</span><span class="value" style="color: #34d399;">$30,000</span></li>
+<li><span class="label">Health Factor</span><span class="value" style="color: #34d399;">2.50 ✅</span></li>
+</ul>
+<div style="font-size: 12px; color: #fcd34d; background: rgba(245, 158, 11, 0.05); padding: 10px; border-radius: 6px; border: 1px solid rgba(245, 158, 11, 0.15); margin-top: 8px;">
+💡 <strong>Unrealized profit</strong> from BNB spot offsets BTC perp margin requirements.
+</div>
+</div>
 
 **Benefits:**
 - Capital efficiency increased by **2-3x** compared to isolated margin
@@ -181,13 +207,32 @@ X18ex implements a **Unified Cross-Margin** system — all positions, spot balan
 Inspired by programmable liquidity hooks (like PancakeSwap v4 Hooks), X18ex allows developers to attach custom logic to the lifecycle of a pool:
 
 ### Hook Points
-```
-beforeInitialize → afterInitialize
-beforeSwap → afterSwap
-beforeAddLiquidity → afterAddLiquidity
-beforeRemoveLiquidity → afterRemoveLiquidity
-beforeSettle → afterSettle
-```
+<div class="x18-flow-process">
+<div class="x18-flow-step">
+<div class="step-num">1</div>
+<div class="step-content"><strong>Initialization:</strong> beforeInitialize ➜ afterInitialize</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">2</div>
+<div class="step-content"><strong>Swap execution:</strong> beforeSwap ➜ afterSwap</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">3</div>
+<div class="step-content"><strong>Liquidity additions:</strong> beforeAddLiquidity ➜ afterAddLiquidity</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">4</div>
+<div class="step-content"><strong>Liquidity withdrawals:</strong> beforeRemoveLiquidity ➜ afterRemoveLiquidity</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">5</div>
+<div class="step-content"><strong>Settlement finalization:</strong> beforeSettle ➜ afterSettle</div>
+</div>
+</div>
 
 ### Plugin Use Cases
 - **Dynamic Fee Plugin** — Fees adjust based on volatility

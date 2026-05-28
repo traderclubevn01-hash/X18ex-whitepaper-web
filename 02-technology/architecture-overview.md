@@ -8,57 +8,75 @@ X18ex is designed with a **5-layer architecture** (Five-Layer Stack) — each la
 
 ## Architecture Diagram
 
-```
-╔══════════════════════════════════════════════════════════════════╗
-║                    🌍 ECOSYSTEM LAYER                          ║
-║  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐  ║
-║  │   Plugin     │  │  Developer   │  │     X18 DAO          │  ║
-║  │ Marketplace  │  │  Community   │  │   Governance         │  ║
-║  └──────┬───────┘  └──────┬───────┘  └──────────┬───────────┘  ║
-╠═════════╪══════════════════╪═════════════════════╪══════════════╣
-║         │          📱 APPLICATION LAYER          │              ║
-║  ┌──────┴───────┐  ┌──────┴───────┐  ┌──────────┴───────────┐  ║
-║  │   Web3       │  │   Mobile     │  │   Bot Dashboard      │  ║
-║  │  Terminal    │  │     App      │  │   & API Portal       │  ║
-║  └──────┬───────┘  └──────┬───────┘  └──────────┬───────────┘  ║
-╠═════════╪══════════════════╪═════════════════════╪══════════════╣
-║         │          🔌 INTEGRATION LAYER          │              ║
-║  ┌──────┴───────┐  ┌──────┴───────┐  ┌──────────┴───────────┐  ║
-║  │  REST API    │  │  WebSocket   │  │   Webhook &          │  ║
-║  │  Gateway     │  │   Feeds      │  │   Event System       │  ║
-║  └──────┬───────┘  └──────┬───────┘  └──────────┬───────────┘  ║
-║  ┌──────┴───────┐  ┌──────┴───────┐  ┌──────────┴───────────┐  ║
-║  │  Wallet      │  │  Cross-chain │  │   Account            │  ║
-║  │ Abstraction  │  │   Bridge     │  │   Abstraction        │  ║
-║  └──────┬───────┘  └──────┬───────┘  └──────────┬───────────┘  ║
-╠═════════╪══════════════════╪═════════════════════╪══════════════╣
-║         │          🧠 INTELLIGENCE LAYER         │              ║
-║  ┌──────┴───────┐  ┌──────┴───────┐  ┌──────────┴───────────┐  ║
-║  │  AI Smart    │  │   Risk       │  │   ZK Privacy         │  ║
-║  │  Routing     │  │  Guardian    │  │     Engine           │  ║
-║  └──────┬───────┘  └──────┬───────┘  └──────────┬───────────┘  ║
-║  ┌──────┴───────┐  ┌──────┴───────┐  ┌──────────┴───────────┐  ║
-║  │  Portfolio   │  │  MEV Protect │  │   Liquidation        │  ║
-║  │   Pilot      │  │    Shield    │  │     Shield           │  ║
-║  └──────┬───────┘  └──────┬───────┘  └──────────┬───────────┘  ║
-╠═════════╪══════════════════╪═════════════════════╪══════════════╣
-║         │          ⚡ PROTOCOL LAYER              │              ║
-║  ┌──────┴───────┐  ┌──────┴───────┐  ┌──────────┴───────────┐  ║
-║  │  Hybrid      │  │ Perpetuals   │  │   Lending &          │  ║
-║  │ Order Book   │  │   Engine     │  │   Borrowing          │  ║
-║  │   + AMM      │  │              │  │                      │  ║
-║  └──────┬───────┘  └──────┬───────┘  └──────────┬───────────┘  ║
-║  ┌──────┴───────┐  ┌──────┴───────┐  ┌──────────┴───────────┐  ║
-║  │  Liquidity   │  │  Settlement  │  │   Plugin Hook        │  ║
-║  │    Pools     │  │    Layer     │  │     Engine            │  ║
-║  └──────────────┘  └──────────────┘  └──────────────────────┘  ║
-╠══════════════════════════════════════════════════════════════════╣
-║                   ⛓️ MULTI-CHAIN SUBSTRATE                     ║
-║  ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐ ┌────┐     ║
-║  │BSC │ │ARB │ │BASE│ │opBNB│ │POL │ │SOL │ │AVAX│ │OP  │    ║
-║  └────┘ └────┘ └────┘ └────┘ └────┘ └────┘ └────┘ └────┘     ║
-╚══════════════════════════════════════════════════════════════════╝
-```
+<div class="x18-layer-stack">
+<div class="x18-stack-layer ecosystem">
+<div class="x18-layer-header">🌍 Layer 5: Ecosystem Layer</div>
+<div class="x18-layer-body">
+<div class="x18-layer-item">Plugin Marketplace</div>
+<div class="x18-layer-item">Developer Community</div>
+<div class="x18-layer-item">X18 DAO Governance</div>
+</div>
+</div>
+
+<div class="x18-stack-layer application">
+<div class="x18-layer-header">📱 Layer 4: Application Layer</div>
+<div class="x18-layer-body">
+<div class="x18-layer-item">Web3 Terminal</div>
+<div class="x18-layer-item">Mobile App</div>
+<div class="x18-layer-item">Bot Dashboard & API Portal</div>
+</div>
+</div>
+
+<div class="x18-stack-layer integration">
+<div class="x18-layer-header">🔌 Layer 3: Integration Layer</div>
+<div class="x18-layer-body">
+<div class="x18-layer-item">REST API Gateway</div>
+<div class="x18-layer-item">WebSocket Feeds</div>
+<div class="x18-layer-item">Webhook & Event System</div>
+<div class="x18-layer-item">Wallet Abstraction</div>
+<div class="x18-layer-item">Cross-chain Bridge</div>
+<div class="x18-layer-item">Account Abstraction</div>
+</div>
+</div>
+
+<div class="x18-stack-layer intelligence">
+<div class="x18-layer-header">🧠 Layer 2: Intelligence Layer</div>
+<div class="x18-layer-body">
+<div class="x18-layer-item">AI Smart Routing</div>
+<div class="x18-layer-item">Risk Guardian</div>
+<div class="x18-layer-item">ZK Privacy Engine</div>
+<div class="x18-layer-item">Portfolio Pilot</div>
+<div class="x18-layer-item">MEV Protect Shield</div>
+<div class="x18-layer-item">Liquidation Shield</div>
+</div>
+</div>
+
+<div class="x18-stack-layer protocol">
+<div class="x18-layer-header">⚡ Layer 1: Protocol Layer</div>
+<div class="x18-layer-body">
+<div class="x18-layer-item">Hybrid Order Book + AMM</div>
+<div class="x18-layer-item">Perpetuals Engine</div>
+<div class="x18-layer-item">Lending & Borrowing</div>
+<div class="x18-layer-item">Liquidity Pools</div>
+<div class="x18-layer-item">Settlement Layer</div>
+<div class="x18-layer-item">Plugin Hook Engine</div>
+</div>
+</div>
+
+<div class="x18-stack-layer multichain">
+<div class="x18-layer-header">⛓️ Multi-Chain Substrate</div>
+<div class="x18-layer-body">
+<div class="x18-layer-item">BNB Chain (BSC)</div>
+<div class="x18-layer-item">Arbitrum (ARB)</div>
+<div class="x18-layer-item">Base</div>
+<div class="x18-layer-item">opBNB</div>
+<div class="x18-layer-item">Polygon (POL)</div>
+<div class="x18-layer-item">Solana (SOL)</div>
+<div class="x18-layer-item">Avalanche (AVAX)</div>
+<div class="x18-layer-item">Optimism (OP)</div>
+</div>
+</div>
+</div>
 
 ---
 

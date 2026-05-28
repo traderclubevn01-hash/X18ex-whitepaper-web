@@ -14,17 +14,40 @@ DeFi is too dry and complex — most potential users are deterred by technical i
 ### The Solution
 Gamification transforms DeFi from "intimidating" to "exciting." X18 Game creates a bridge:
 
-```
-┌──────────────┐         ┌──────────────┐         ┌──────────────┐
-│   BEGINNER   │  ────►  │   X18 GAME   │  ────►  │   X18 DEX    │
-│              │         │              │         │              │
-│ • Curious    │         │ • Play games │         │ • Swap       │
-│ • Unfamiliar │         │ • Earn tokens│         │ • Trade      │
-│   with DeFi  │         │ • Learn DeFi │         │ • Invest     │
-│ • Fearful of │         │ • Zero risk  │         │ • Full DeFi  │
-│   risks      │         │              │         │              │
-└──────────────┘         └──────────────┘         └──────────────┘
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">USER JOURNEY FLOW</div>
+<div class="x18-diagram-row cols-3">
+<div class="x18-diagram-card" style="border-color: rgba(239, 68, 68, 0.2) !important;">
+<div class="card-icon">🆕</div>
+<div class="card-title">1. BEGINNER</div>
+<div class="card-desc" style="text-align: left;">
+• Curious about DeFi<br/>
+• Unfamiliar with terminology<br/>
+• Fearful of loss & risks
+</div>
+</div>
+
+<div class="x18-diagram-card" style="border-color: rgba(155, 81, 224, 0.4) !important;">
+<div class="card-icon">🎮</div>
+<div class="card-title" style="color: #9b51e0;">2. X18 GAME</div>
+<div class="card-desc" style="text-align: left;">
+• Play financial strategy games<br/>
+• Learn core DeFi concepts<br/>
+• Zero-risk trading simulation
+</div>
+</div>
+
+<div class="x18-diagram-card" style="border-color: rgba(16, 185, 129, 0.4) !important;">
+<div class="card-icon">⚡</div>
+<div class="card-title" style="color: #34d399;">3. X18 DEX</div>
+<div class="card-desc" style="text-align: left;">
+• Execute actual spot & perp swaps<br/>
+• Auto-rebalance & optimize<br/>
+• Navigate full DeFi ecosystem
+</div>
+</div>
+</div>
+</div>
 
 ---
 
@@ -56,20 +79,20 @@ X18 Game is a **financial strategy** game where players:
 ## Game Economy & $X18 Integration
 
 ### Earn Mechanisms
-```
-┌─────────────────────────────────────────────────┐
-│              X18 GAME REWARDS                   │
-│                                                 │
-│  📋 Daily Missions          →  $X18 rewards     │
-│  🏆 Tournament Wins         →  $X18 prize pool  │
-│  📈 Trading Sim Performance →  $X18 bonuses     │
-│  🎯 Achievement Unlocks     →  NFT + $X18       │
-│  👥 Referral & Social       →  $X18 sharing     │
-│                                                 │
-│  ⚠️ Anti-bot: Proof-of-Play verification        │
-│  📊 Reward pool: Managed by DAO                 │
-└─────────────────────────────────────────────────┘
-```
+<div class="x18-diagram-box" style="max-width: 480px; margin: 30px auto;">
+<div class="x18-diagram-title" style="color: #f7b32b;">🎮 X18 GAME REWARDS</div>
+<ul class="x18-node-details" style="margin: 10px 0 !important;">
+<li><span class="label">📋 Daily Missions</span><span class="value" style="color: #34d399;">$X18 Rewards</span></li>
+<li><span class="label">🏆 Tournament Wins</span><span class="value" style="color: #34d399;">$X18 Prize Pool Share</span></li>
+<li><span class="label">📈 Trading Sim Performance</span><span class="value" style="color: #34d399;">$X18 Bonuses</span></li>
+<li><span class="label">🎯 Achievement Unlocks</span><span class="value" style="color: #34d399;">Rare NFT + $X18</span></li>
+<li><span class="label">👥 Referral & Social</span><span class="value" style="color: #34d399;">$X18 Sharing Allocation</span></li>
+</ul>
+<div style="font-size: 12px; color: #cbd5e1; background: rgba(255, 255, 255, 0.02); padding: 10px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.05); margin-top: 8px;">
+🛡️ <strong>Anti-bot:</strong> Proof-of-Play verification required.<br/>
+📊 <strong>Reward Pool:</strong> Finite supply managed by X18 DAO.
+</div>
+</div>
 
 ### Game ↔ DEX Synergy
 - **In-game assets** can be traded on the X18 DEX marketplace

@@ -82,13 +82,31 @@ $X18 has **7 layers of utility** — each layer creates real demand:
 
 $X18 is underpinned by **real protocol revenue**:
 
-```
-Protocol Revenue
-├── 40% → Buy Back & Burn $X18    ← Reduce supply, increase price
-├── 30% → veX18 Revenue Share     ← Incentive lock, reduce sell
-├── 20% → Treasury (DAO)          ← Fund growth
-└── 10% → Development             ← Build more features
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">Protocol Revenue Allocation</div>
+<div class="x18-diagram-row cols-4">
+<div class="x18-diagram-card" style="border-color: rgba(239, 76, 60, 0.4) !important;">
+<div class="card-icon">🔥</div>
+<div class="card-title">40% Buy & Burn</div>
+<div class="card-desc">Reduces supply, supports floor price</div>
+</div>
+<div class="x18-diagram-card" style="border-color: rgba(16, 185, 129, 0.4) !important;">
+<div class="card-icon">🔒</div>
+<div class="card-title" style="color: #34d399;">30% veX18 Revenue Share</div>
+<div class="card-desc">Incentivizes long-term locking, reduces selling</div>
+</div>
+<div class="x18-diagram-card" style="border-color: rgba(247, 179, 43, 0.4) !important;">
+<div class="card-icon">🏛️</div>
+<div class="card-title">20% Treasury (DAO)</div>
+<div class="card-desc">Funds ecosystem expansion and projects</div>
+</div>
+<div class="x18-diagram-card" style="border-color: rgba(74, 108, 247, 0.4) !important;">
+<div class="card-icon">💻</div>
+<div class="card-title">10% Development</div>
+<div class="card-desc">Continuous platform building and team engineering</div>
+</div>
+</div>
+</div>
 
 | Scenario | Daily Volume | Annual Buy & Burn |
 |:---|:---|:---|
@@ -136,12 +154,27 @@ Protocol Revenue
 
 ## #7: Network Effects — Flywheel
 
-```
-More Users → More Volume → More Revenue
-→ More Buy & Burn (Supply ↓)
-→ More Revenue Share (Demand to lock ↑)
-→ Price Appreciation → Attract More Users → (Loop)
-```
+<div class="x18-flow-process">
+<div class="x18-flow-step">
+<div class="step-num">1</div>
+<div class="step-content"><strong>User Acquisition:</strong> More Users ➜ More Trading Volume ➜ More Revenue.</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">2</div>
+<div class="step-content"><strong>Supply Squeeze:</strong> More buyback and burn decreases circulating token supply.</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">3</div>
+<div class="step-content"><strong>Demand Growth:</strong> Lock veX18 demand rises due to increasing yield & revenue share metrics.</div>
+</div>
+<div class="x18-flow-arrow">▼</div>
+<div class="x18-flow-step">
+<div class="step-num">4</div>
+<div class="step-content"><strong>Price Growth:</strong> Scarcity + demand drives price up, attracting even more users back to the loop.</div>
+</div>
+</div>
 
 **Self-reinforcing loop** — each new user increases value for all holders.
 

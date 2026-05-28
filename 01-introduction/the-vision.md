@@ -25,16 +25,65 @@ This is the vision of X18ex — and we are building it step by step.
 
 ### 5-Year Vision
 
-```
-2026         2027          2028          2029          2030+
- │            │             │             │             │
- │ Platform   │  DEX #1     │  Complete   │  Global     │  Financial
- │ + Node     │  AI-Native  │  DeFi OS    │  Financial  │  Standard
- │  Sale      │  + Game     │  + RWA      │  Infra      │  Infrastructure
- │            │             │             │             │
- ▼            ▼             ▼             ▼             ▼
- 50K users    500K users    2M users      10M users     50M+ users
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">5-Year Vision Timeline</div>
+<div class="x18-diagram-row cols-5">
+<div class="x18-diagram-card">
+<div class="card-icon" style="color: #60a5fa;">📅</div>
+<div class="card-title">2026</div>
+<div class="card-desc">
+<strong>Genesis</strong><br/>
+• Platform Launch<br/>
+• Node Sale<br/>
+<span style="color: #10b981; font-weight: 600;">🎯 50K Users</span>
+</div>
+</div>
+
+<div class="x18-diagram-card">
+<div class="card-icon" style="color: #3b82f6;">🚀</div>
+<div class="card-title">2027</div>
+<div class="card-desc">
+<strong>Growth</strong><br/>
+• DEX #1 AI-Native<br/>
+• X18 Game Launch<br/>
+<span style="color: #10b981; font-weight: 600;">🎯 500K Users</span>
+</div>
+</div>
+
+<div class="x18-diagram-card">
+<div class="card-icon" style="color: #9b51e0;">🧠</div>
+<div class="card-title">2028</div>
+<div class="card-desc">
+<strong>Scale</strong><br/>
+• Complete DeFi OS<br/>
+• RWA Integrations<br/>
+<span style="color: #10b981; font-weight: 600;">🎯 2M Users</span>
+</div>
+</div>
+
+<div class="x18-diagram-card">
+<div class="card-icon" style="color: #f7b32b;">🌍</div>
+<div class="card-title">2029</div>
+<div class="card-desc">
+<strong>Global</strong><br/>
+• Global Finance Hub<br/>
+• Institutional API<br/>
+<span style="color: #10b981; font-weight: 600;">🎯 10M Users</span>
+</div>
+</div>
+
+<div class="x18-diagram-card">
+<div class="card-icon" style="color: #10b981;">💎</div>
+<div class="card-title">2030+</div>
+<div class="card-desc">
+<strong>Dominance</strong><br/>
+• Standard Infra<br/>
+• Sovereign Finance<br/>
+<span style="color: #10b981; font-weight: 600;">🎯 50M+ Users</span>
+</div>
+</div>
+</div>
+</div>
 
 ---
 
@@ -134,26 +183,49 @@ X18ex does not belong to the team — it belongs to the community. From Day 1, w
 
 ## Competitive Landscape
 
-```
-                    AI-Native
-                       ↑
-                       |
-                  ★ X18ex ★
-                  (All-in-One + AI + Game)
-                       |
-         ApolloX ○ | ○ 1inch
-                   |
-    KiloEx ○       |       ○ Venus
-                   |
-  PancakeSwap ○    |    ○ Jupiter
-                   |
-        GMX ○      |      ○ Aave
-                       |
-    ───────────────────┼───────────────→
-    Single Feature     |     All-in-One
-                       |
-                  Traditional
-```
+<div class="x18-diagram-box">
+<div class="x18-diagram-title">Competitive Positioning Matrix</div>
+<div class="x18-diagram-row cols-2">
+<div class="x18-diagram-card" style="border-color: rgba(155, 81, 224, 0.5) !important; background: rgba(155, 81, 224, 0.03) !important;">
+<div class="card-icon">★</div>
+<div class="card-title" style="color: #9b51e0; font-size: 16px;">X18ex (AI-Native + All-in-One)</div>
+<div class="card-desc" style="text-align: left;">
+• <strong>Full Integration:</strong> Spot, Futures, Bots, Game, and Plugins in a single interface.<br/>
+• <strong>AI-Native:</strong> AI-powered routing, MEV shield, liquidation alerts, and smart rebalancing.<br/>
+• <strong>Blue Ocean:</strong> Occupying a unique space combining high intelligence and complete utility.
+</div>
+</div>
+
+<div class="x18-diagram-card">
+<div class="card-icon">⚪</div>
+<div class="card-title">Traditional All-in-One DEXs</div>
+<div class="card-desc" style="text-align: left;">
+• <strong>Platforms:</strong> PancakeSwap, Jupiter, 1inch.<br/>
+• <strong>Scope:</strong> Multiple chains and swap options, but lack deep AI-driven optimization or gaming systems.
+</div>
+</div>
+</div>
+
+<div class="x18-diagram-row cols-2">
+<div class="x18-diagram-card">
+<div class="card-icon">⚪</div>
+<div class="card-title">Specialized Derivative DEXs</div>
+<div class="card-desc" style="text-align: left;">
+• <strong>Platforms:</strong> ApolloX, KiloEx, GMX.<br/>
+• <strong>Scope:</strong> High-performance futures/derivatives trading, but limited to a single feature-set without cross-ecosystem routing.
+</div>
+</div>
+
+<div class="x18-diagram-card">
+<div class="card-icon">⚪</div>
+<div class="card-title">DeFi Lending & Yield</div>
+<div class="card-desc" style="text-align: left;">
+• <strong>Platforms:</strong> Venus, Aave.<br/>
+• <strong>Scope:</strong> Specialized capital efficiency protocols, operating as siloed components.
+</div>
+</div>
+</div>
+</div>
 
 **X18ex occupies a position where no one else stands**: the upper right quadrant — **All-in-One + AI-Native + Game-Integrated**. This is a blue ocean strategy — not competing directly but creating a new category.
 
