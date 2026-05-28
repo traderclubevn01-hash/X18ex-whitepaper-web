@@ -104,8 +104,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'twitter', link: 'https://twitter.com/X18ex_Official' },
-      { icon: 'github', link: 'https://github.com/traderclubevn01-hash/X18ex-whitepaper' }
+      { icon: 'twitter', link: 'https://twitter.com/X18ex_Official' }
     ],
 
     footer: {
