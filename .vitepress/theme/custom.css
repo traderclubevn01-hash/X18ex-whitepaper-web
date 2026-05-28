@@ -53,3 +53,243 @@
 .VPSidebarItem.active > .item > .link > .text {
   color: var(--vp-c-brand-2) !important;
 }
+
+/* Custom CSS for Node Cards and Countdown */
+.x18-node-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.x18-node-card {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.x18-node-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.x18-node-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.x18-node-card.bronze {
+  border: 1px solid rgba(205, 127, 50, 0.2) !important;
+}
+.x18-node-card.bronze::before {
+  background: linear-gradient(90deg, #cd7f32, #b87333);
+}
+.x18-node-card.bronze:hover {
+  border-color: rgba(205, 127, 50, 0.5) !important;
+  box-shadow: 0 0 15px rgba(205, 127, 50, 0.15);
+}
+
+.x18-node-card.silver {
+  border: 1px solid rgba(192, 192, 192, 0.2) !important;
+}
+.x18-node-card.silver::before {
+  background: linear-gradient(90deg, #c0c0c0, #e0e0e0);
+}
+.x18-node-card.silver:hover {
+  border-color: rgba(192, 192, 192, 0.5) !important;
+  box-shadow: 0 0 15px rgba(192, 192, 192, 0.15);
+}
+
+.x18-node-card.gold {
+  border: 1px solid rgba(247, 179, 43, 0.2) !important;
+}
+.x18-node-card.gold::before {
+  background: linear-gradient(90deg, #f7b32b, #f5cd79);
+}
+.x18-node-card.gold:hover {
+  border-color: rgba(247, 179, 43, 0.5) !important;
+  box-shadow: 0 0 20px rgba(247, 179, 43, 0.2);
+}
+
+.x18-node-badge {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.x18-node-card.bronze .x18-node-badge { color: #cd7f32; }
+.x18-node-card.silver .x18-node-badge { color: #c0c0c0; }
+.x18-node-card.gold .x18-node-badge { color: #f7b32b; }
+
+.x18-node-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.x18-node-details {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 16px 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #b0b7c3;
+}
+
+.x18-node-details li {
+  padding-left: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 6px;
+}
+
+.x18-node-details span.label {
+  font-weight: 500;
+}
+.x18-node-details span.value {
+  color: #fff;
+  font-weight: 600;
+  font-family: var(--vp-font-family-mono);
+}
+
+.x18-node-btn {
+  margin-top: 12px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff !important;
+  font-weight: 600;
+  transition: background 0.2s;
+  text-decoration: none !important;
+  font-size: 14px;
+}
+.x18-node-card.bronze .x18-node-btn:hover { background: rgba(205, 127, 50, 0.2); }
+.x18-node-card.silver .x18-node-btn:hover { background: rgba(192, 192, 192, 0.2); }
+.x18-node-card.gold .x18-node-btn:hover { background: rgba(247, 179, 43, 0.2); }
+
+/* Countdown Clock Widget */
+.x18-countdown-container {
+  background: rgba(10, 14, 23, 0.6) !important;
+  border: 1px solid rgba(74, 108, 247, 0.15) !important;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 30px 0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.x18-countdown-header {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+  margin-bottom: 20px;
+}
+
+.x18-countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.x18-timer-unit {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-align: center;
+  min-width: 75px;
+}
+
+.x18-timer-num {
+  font-size: 28px;
+  font-weight: 800;
+  font-family: var(--vp-font-family-mono);
+  color: #fff;
+  line-height: 1;
+}
+
+.x18-timer-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #b0b7c3;
+  margin-top: 4px;
+  letter-spacing: 1px;
+}
+
+.x18-progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.x18-progress-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.x18-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.x18-progress-name {
+  color: #fff;
+}
+.x18-progress-sold {
+  color: #b0b7c3;
+  font-family: var(--vp-font-family-mono);
+}
+
+.x18-progress-bar-bg {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.x18-progress-bar {
+  height: 100%;
+  border-radius: 4px;
+}
+.x18-progress-item.bronze .x18-progress-bar { background: #cd7f32; width: 68%; }
+.x18-progress-item.silver .x18-progress-bar { background: #c0c0c0; width: 72%; }
+.x18-progress-item.gold .x18-progress-bar { background: #f7b32b; width: 85%; }
+
+.x18-countdown-footer {
+  text-align: center;
+  font-size: 13px;
+  color: #b0b7c3;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
