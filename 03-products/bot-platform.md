@@ -35,7 +35,7 @@ Over **60% of volume** on leading DEXs comes from bots and automated strategies.
 
 ### REST API v2
 ```
-Base URL: https://api.x18ex.com/v2/
+Base URL: https://api.x18ex.io/v2/
 
 Endpoints:
 ├── /markets          — List all trading pairs
@@ -51,7 +51,7 @@ Endpoints:
 
 ### WebSocket Feeds
 ```
-ws://stream.x18ex.com/v2/
+ws://stream.x18ex.io/v2/
 
 Channels:
 ├── orderbook@{pair}   — Live order book updates

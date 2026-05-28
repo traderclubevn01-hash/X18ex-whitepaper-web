@@ -9,8 +9,8 @@
 - Integration guides
 
 ### API Documentation
-- [REST API Reference](https://docs.x18ex.com/api) *(coming soon)*
-- [WebSocket Feeds](https://docs.x18ex.com/ws) *(coming soon)*
+- [REST API Reference](https://docs.x18ex.io/api) *(coming soon)*
+- [WebSocket Feeds](https://docs.x18ex.io/ws) *(coming soon)*
 - Authentication & API keys
 - Rate limits & best practices
 

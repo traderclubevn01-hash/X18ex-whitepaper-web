@@ -11,7 +11,7 @@ hero:
       link: /01-introduction/executive-summary
     - theme: alt
       text: Visit Website
-      link: https://x18ex.com
+      link: https://x18ex.io
 
 features:
   - icon: 🧠
