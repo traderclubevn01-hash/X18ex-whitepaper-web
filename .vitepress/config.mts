@@ -15,7 +15,7 @@ export default defineConfig({
       { text: 'Introduction', link: '/01-introduction/executive-summary' },
       { text: 'Technology', link: '/02-technology/architecture-overview' },
       { text: 'Tokenomics', link: '/04-tokenomics/token-overview' },
-      { text: 'Launch App', link: 'https://x18ex.com' }
+      { text: 'Launch App', link: 'https://x18ex.io' }
     ],
 
     sidebar: [
