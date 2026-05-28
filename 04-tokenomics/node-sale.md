@@ -22,50 +22,50 @@ The initial Node sale program allows users to **invest early** in the X18ex ecos
 ## Node Packages
 
 <div class="x18-node-grid">
-  <!-- Bronze Package -->
-  <div class="x18-node-card bronze">
-    <div class="x18-node-badge">🥉 Tier 1</div>
-    <div class="x18-node-title">$1,000 Package</div>
-    <ul class="x18-node-details">
-      <li><span class="label">Purchase Price</span><span class="value">$1,000</span></li>
-      <li><span class="label">$X18 Received</span><span class="value">1,000</span></li>
-      <li><span class="label">Total Quantity</span><span class="value">1,000 packages</span></li>
-      <li><span class="label">Benefit Level</span><span class="value">V1</span></li>
-      <li><span class="label">Mining Rate</span><span class="value">8% / month</span></li>
-      <li><span class="label">Purchase Bonus</span><span class="value">0%</span></li>
-    </ul>
-    <a href="#" class="x18-node-btn">Buy Node Now</a>
-  </div>
+<!-- Bronze Package -->
+<div class="x18-node-card bronze">
+<div class="x18-node-badge">🥉 Tier 1</div>
+<div class="x18-node-title">$1,000 Package</div>
+<ul class="x18-node-details">
+<li><span class="label">Purchase Price</span><span class="value">$1,000</span></li>
+<li><span class="label">$X18 Received</span><span class="value">1,000</span></li>
+<li><span class="label">Total Quantity</span><span class="value">1,000 packages</span></li>
+<li><span class="label">Benefit Level</span><span class="value">V1</span></li>
+<li><span class="label">Mining Rate</span><span class="value">8% / month</span></li>
+<li><span class="label">Purchase Bonus</span><span class="value">0%</span></li>
+</ul>
+<a href="#" class="x18-node-btn">Buy Node Now</a>
+</div>
 
-  <!-- Silver Package -->
-  <div class="x18-node-card silver">
-    <div class="x18-node-badge">🥈 Tier 2</div>
-    <div class="x18-node-title">$5,000 Package</div>
-    <ul class="x18-node-details">
-      <li><span class="label">Purchase Price</span><span class="value">$5,000</span></li>
-      <li><span class="label">$X18 Received</span><span class="value">5,000</span></li>
-      <li><span class="label">Total Quantity</span><span class="value">1,000 packages</span></li>
-      <li><span class="label">Benefit Level</span><span class="value">V2</span></li>
-      <li><span class="label">Mining Rate</span><span class="value">9% / month</span></li>
-      <li><span class="label">Purchase Bonus</span><span class="value">5% (+250 X18)</span></li>
-    </ul>
-    <a href="#" class="x18-node-btn">Buy Node Now</a>
-  </div>
+<!-- Silver Package -->
+<div class="x18-node-card silver">
+<div class="x18-node-badge">🥈 Tier 2</div>
+<div class="x18-node-title">$5,000 Package</div>
+<ul class="x18-node-details">
+<li><span class="label">Purchase Price</span><span class="value">$5,000</span></li>
+<li><span class="label">$X18 Received</span><span class="value">5,000</span></li>
+<li><span class="label">Total Quantity</span><span class="value">1,000 packages</span></li>
+<li><span class="label">Benefit Level</span><span class="value">V2</span></li>
+<li><span class="label">Mining Rate</span><span class="value">9% / month</span></li>
+<li><span class="label">Purchase Bonus</span><span class="value">5% (+250 X18)</span></li>
+</ul>
+<a href="#" class="x18-node-btn">Buy Node Now</a>
+</div>
 
-  <!-- Gold Package -->
-  <div class="x18-node-card gold">
-    <div class="x18-node-badge">🥇 Tier 3 (Best Value)</div>
-    <div class="x18-node-title">$10,000 Package</div>
-    <ul class="x18-node-details">
-      <li><span class="label">Purchase Price</span><span class="value">$10,000</span></li>
-      <li><span class="label">$X18 Received</span><span class="value">10,000</span></li>
-      <li><span class="label">Total Quantity</span><span class="value">300 packages</span></li>
-      <li><span class="label">Benefit Level</span><span class="value">V3</span></li>
-      <li><span class="label">Mining Rate</span><span class="value">10% / month</span></li>
-      <li><span class="label">Purchase Bonus</span><span class="value">10% (+1,000 X18)</span></li>
-    </ul>
-    <a href="#" class="x18-node-btn">Buy Node Now</a>
-  </div>
+<!-- Gold Package -->
+<div class="x18-node-card gold">
+<div class="x18-node-badge">🥇 Tier 3 (Best Value)</div>
+<div class="x18-node-title">$10,000 Package</div>
+<ul class="x18-node-details">
+<li><span class="label">Purchase Price</span><span class="value">$10,000</span></li>
+<li><span class="label">$X18 Received</span><span class="value">10,000</span></li>
+<li><span class="label">Total Quantity</span><span class="value">300 packages</span></li>
+<li><span class="label">Benefit Level</span><span class="value">V3</span></li>
+<li><span class="label">Mining Rate</span><span class="value">10% / month</span></li>
+<li><span class="label">Purchase Bonus</span><span class="value">10% (+1,000 X18)</span></li>
+</ul>
+<a href="#" class="x18-node-btn">Buy Node Now</a>
+</div>
 </div>
 
 ### Detailed Benefits Table
@@ -168,46 +168,46 @@ Rewards are unlocked and can be:
 The Node sale program features a **countdown clock** displayed in each user's dashboard:
 
 <div class="x18-countdown-container">
-  <div class="x18-countdown-header">⏱️ NODE SALE COUNTDOWN</div>
-  <div class="x18-countdown-timer">
-    <div class="x18-timer-unit"><div class="x18-timer-num">67</div><div class="x18-timer-label">Days</div></div>
-    <div class="x18-timer-unit"><div class="x18-timer-num">14</div><div class="x18-timer-label">Hours</div></div>
-    <div class="x18-timer-unit"><div class="x18-timer-num">32</div><div class="x18-timer-label">Minutes</div></div>
-  </div>
-  
-  <div class="x18-progress-list">
-    <!-- Bronze Progress -->
-    <div class="x18-progress-item bronze">
-      <div class="x18-progress-labels">
-        <span class="x18-progress-name">🥉 $1,000 Package</span>
-        <span class="x18-progress-sold">680 / 1,000 sold (68%)</span>
-      </div>
-      <div class="x18-progress-bar-bg"><div class="x18-progress-bar"></div></div>
-    </div>
-    
-    <!-- Silver Progress -->
-    <div class="x18-progress-item silver">
-      <div class="x18-progress-labels">
-        <span class="x18-progress-name">🥈 $5,000 Package</span>
-        <span class="x18-progress-sold">720 / 1,000 sold (72%)</span>
-      </div>
-      <div class="x18-progress-bar-bg"><div class="x18-progress-bar"></div></div>
-    </div>
-    
-    <!-- Gold Progress -->
-    <div class="x18-progress-item gold">
-      <div class="x18-progress-labels">
-        <span class="x18-progress-name">🥇 $10,000 Package</span>
-        <span class="x18-progress-sold">255 / 300 sold (85%)</span>
-      </div>
-      <div class="x18-progress-bar-bg"><div class="x18-progress-bar"></div></div>
-    </div>
-  </div>
+<div class="x18-countdown-header">⏱️ NODE SALE COUNTDOWN</div>
+<div class="x18-countdown-timer">
+<div class="x18-timer-unit"><div class="x18-timer-num">67</div><div class="x18-timer-label">Days</div></div>
+<div class="x18-timer-unit"><div class="x18-timer-num">14</div><div class="x18-timer-label">Hours</div></div>
+<div class="x18-timer-unit"><div class="x18-timer-num">32</div><div class="x18-timer-label">Minutes</div></div>
+</div>
 
-  <div class="x18-countdown-footer">
-    📊 <strong>Total sold: 1,655 / 2,300 (71.9%)</strong><br/>
-    🔥 Unsold Nodes after 3 months → Permanently BURNED
-  </div>
+<div class="x18-progress-list">
+<!-- Bronze Progress -->
+<div class="x18-progress-item bronze">
+<div class="x18-progress-labels">
+<span class="x18-progress-name">🥉 $1,000 Package</span>
+<span class="x18-progress-sold">680 / 1,000 sold (68%)</span>
+</div>
+<div class="x18-progress-bar-bg"><div class="x18-progress-bar"></div></div>
+</div>
+
+<!-- Silver Progress -->
+<div class="x18-progress-item silver">
+<div class="x18-progress-labels">
+<span class="x18-progress-name">🥈 $5,000 Package</span>
+<span class="x18-progress-sold">720 / 1,000 sold (72%)</span>
+</div>
+<div class="x18-progress-bar-bg"><div class="x18-progress-bar"></div></div>
+</div>
+
+<!-- Gold Progress -->
+<div class="x18-progress-item gold">
+<div class="x18-progress-labels">
+<span class="x18-progress-name">🥇 $10,000 Package</span>
+<span class="x18-progress-sold">255 / 300 sold (85%)</span>
+</div>
+<div class="x18-progress-bar-bg"><div class="x18-progress-bar"></div></div>
+</div>
+</div>
+
+<div class="x18-countdown-footer">
+📊 <strong>Total sold: 1,655 / 2,300 (71.9%)</strong><br/>
+🔥 Unsold Nodes after 3 months → Permanently BURNED
+</div>
 </div>
 
 ---
