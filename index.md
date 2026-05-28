@@ -5,6 +5,9 @@ hero:
   name: X18ex
   text: The Intelligent Multi-Chain DEX
   tagline: Trade Smarter. Across Every Chain. Protected by AI.
+  image:
+    src: /logo.png
+    alt: X18ex Logo
   actions:
     - theme: brand
       text: Read Whitepaper
