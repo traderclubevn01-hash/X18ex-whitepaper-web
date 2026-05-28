@@ -1,0 +1,15 @@
+{
+  "name": "x18ex-whitepaper-web",
+  "version": "1.0.0",
+  "description": "X18ex Whitepaper — Web Documentation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vitepress": "^1.1.4"
+  }
+}

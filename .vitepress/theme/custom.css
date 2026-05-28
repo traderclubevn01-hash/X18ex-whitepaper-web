@@ -1,0 +1,55 @@
+/**
+ * Custom CSS for X18ex theme (VitePress)
+ */
+
+:root {
+  /* Brand colors */
+  --vp-c-brand-1: #4A6CF7; /* Neon Blue */
+  --vp-c-brand-2: #9B51E0; /* Neon Purple */
+  --vp-c-brand-3: #F7B32B; /* Accent Gold */
+  
+  --vp-c-brand: var(--vp-c-brand-1);
+  --vp-c-brand-next: var(--vp-c-brand-2);
+  
+  /* Fonts */
+  --vp-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --vp-font-family-mono: 'Space Mono', monospace;
+}
+
+/* Home page hero gradient */
+.VPContent {
+  background-color: #0A0E17 !important; /* X18ex Dark Background */
+}
+
+.VPHero .name {
+  background: linear-gradient(135deg, #4A6CF7 0%, #9B51E0 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Custom cards styling */
+.VPFeature {
+  border: 1px solid rgba(74, 108, 247, 0.15) !important;
+  background-color: rgba(10, 14, 23, 0.6) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.VPFeature:hover {
+  border-color: rgba(155, 81, 224, 0.4) !important;
+}
+
+.VPFeature .icon {
+  background-color: rgba(74, 108, 247, 0.1) !important;
+  border-radius: 8px;
+}
+
+/* Sidebar active indicators */
+.VPSidebarItem.level-0 .text {
+  font-weight: 600;
+}
+
+.VPSidebarItem.active > .item > .link > .text {
+  color: var(--vp-c-brand-2) !important;
+}
